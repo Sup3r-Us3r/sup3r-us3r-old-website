@@ -1,7 +1,7 @@
 {% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count') | reverse  %}
 <div class="col s12 switch">
   <label>
-    Mostrar projetos forked
+    Show forked projects
     <input class="fork-switch" type="checkbox" checked="1" onchange="toggleForked()">
     <span class="lever"></span>
   </label>
