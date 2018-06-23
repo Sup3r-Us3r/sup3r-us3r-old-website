@@ -108,7 +108,6 @@ Vamos utilizar o **gdisk** para a criação das partições `/boot` `/swap` `/ro
 **(Substitua o X pela letra do seu disco rígido ex: "sda, sdb")**
 
 > Logo em seguida você entrará na interface do gdisk, onde deverá particionar o disco, ele possui uma interface simples mas eficaz, basta seguir o exemplo abaixo:
-
 ```
 Command (? for help): o
 Proceed? (Y/N): Y
@@ -142,7 +141,8 @@ Hex Code or GUID: 8300
 
 ### FORMATAR AS PARTIÇÕES
 Após o particionameto do disco rígido, devemos formatar as partições.
-#### Formatar `/root` `/swap` **(BIOS)**
+
+> Formatar `/root` `/swap` **(BIOS)**
 > Root:
 ```
 # mkfs.ext4 /dev/sda1
@@ -153,7 +153,7 @@ Após o particionameto do disco rígido, devemos formatar as partições.
 # swapon /dev/sda2
 ```
 
-> #### 🔶 Formatar `/boot` `/swap` `/root` **(UEFI)**
+> 🔶 Formatar `/boot` `/swap` `/root` **(UEFI)**
 > Boot:
 ```
 # mkfs.vfat -F32 /dev/sda1
@@ -167,13 +167,13 @@ Após o particionameto do disco rígido, devemos formatar as partições.
 ### MONTAGEM DAS PARTIÇÕES
 > Antes de podermos baixar, e instalar os pacotes base do Arch Linux, precisamos montar nossas partições, e mudar para o nosso diretório root. Afinal, é nele onde vamos instalar o Arch Linux.
 
-#### Montar `/root` **(BIOS)**
+> Montar `/root` **(BIOS)**
 > Root:
 ```
 # mount -t ext4 /dev/sda1 /mnt
 ```
 
-#### 🔶 Montar `/boot` `/root` **(UEFI)**
+> 🔶 Montar `/boot` `/root` **(UEFI)**
 > Boot:
 ```
 # mkdir -p /mnt/boot/efi
