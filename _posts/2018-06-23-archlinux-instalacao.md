@@ -108,6 +108,7 @@ Vamos utilizar o **gdisk** para a criação das partições `/boot` `/swap` `/ro
 **(Substitua o X pela letra do seu disco rígido ex: "sda, sdb")**
 
 > Logo em seguida você entrará na interface do gdisk, onde deverá particionar o disco, ele possui uma interface simples mas eficaz, basta seguir o exemplo abaixo:
+
 ```
 Command (? for help): o
 Proceed? (Y/N): Y
