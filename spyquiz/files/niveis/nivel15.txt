@@ -1,0 +1,2 @@
+ta_achando_facil_ne_moleque = 74 61 5f 61 63 68 61 6e 64 6f 5f 66 61 63 69 6c 5f 6e 65 5f 6d 6f 6c 65 71 75 65
+http://www.unit-conversion.info/texttools/hexadecimal

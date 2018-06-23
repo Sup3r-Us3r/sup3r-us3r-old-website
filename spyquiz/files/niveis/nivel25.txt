@@ -1,0 +1,5 @@
+Octal para Txt = http://www.unit-conversion.info/texttools/octal/#data
+Resultado de Octal/Txt para Hexa = http://www.unit-conversion.info/texttools/hexadecimal/#data
+Resultado de Hexa para Binario = http://www.unit-conversion.info/texttools/convert-text-to-binary/#data
+Resultado de Binario para Reverse Txt = http://www.unit-conversion.info/texttools/reverse-text/#data = neverland
+

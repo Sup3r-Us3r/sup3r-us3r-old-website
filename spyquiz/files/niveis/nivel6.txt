@@ -1,0 +1,2 @@
+login = tecnologia
+senha = hacker

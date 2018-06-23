@@ -1,0 +1,2 @@
+01100100 01101001 01100110 01100110 01101001 01100011 01110101 01101100 01110100 00111111 = difficult?
+http://www.unit-conversion.info/texttools/convert-text-to-binary

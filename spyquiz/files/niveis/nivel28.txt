@@ -1,0 +1,4 @@
+chave = http://speakingppt.com/wp-content/uploads/2011/10/webdings-wingdings-character-map-speakingppt.png = dcccxxxiii = 833
+http://numeracaoromana.babuo.com/DCCCXXXIII-numero-romano
+
+matrix = arquivo 833 = inception

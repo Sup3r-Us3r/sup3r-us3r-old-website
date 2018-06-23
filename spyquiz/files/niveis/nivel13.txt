@@ -1,0 +1,2 @@
+embinario = 01100101 01101101 01100010 01101001 01101110 01100001 01110010 01101001 01101111
+http://www.unit-conversion.info/texttools/convert-text-to-binary/

@@ -1,0 +1,54 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>:: Spy-Quiz ::</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #000000;
+}
+.style1 {
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+-->
+</style></head>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27791585-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script language=JavaScript>
+var pass, t;
+pass=prompt("Digite a Senha: ","");
+if (pass=="Penetration Tester's") {
+window.location.href="nivel3";
+t=1;
+}else {alert("hehehe, Relaxa é mais fácil do que você imagina, tente novamente que você vai conseguir!");
+window.location.href="spy.php";}
+// -->
+</script>
+<body>
+<div align="center">
+  <p><img src="spysecurity.png" width="208" height="157" /><br />    
+      <br />  
+    <span class="style1">A vida é um grande desafio, podemos ultrapassar obstáculos, ou desistir no meio do caminho. (Claudiney Ribeiro)</span><br />
+    <img src="2.png" width="800" height="99" /><br />
+    <span class="style1">Achou fácil o nível 1? o nível 2 é tão fácil que nem compensa ficar aqui por muito tempo né!</span><br />
+    <br />
+    <a href="#"><br />
+  </p>
+  </div>
+</body>
+</html>
