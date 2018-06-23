@@ -27,7 +27,7 @@ Uma das maiores vantagens da distribuição Arch Linux é a sua simplicidade na 
 
 ------
 
-* Faça o download do Arch Linux: [Baixar](https://www.archlinux.org/download/)
+Faça o download do Arch Linux: [Baixar](https://www.archlinux.org/download/)
 
 Para criar um USB bootable no:
 * Linux: [Etcher](https://etcher.io/) - [RosaImageWriter](http://wiki.rosalab.com/en/index.php/ROSA_ImageWriter)
@@ -36,7 +36,7 @@ Para criar um USB bootable usando o comando (dd) no Linux:
 ```
 # dd bs=4M if=/lugar_onde_esta_sua_iso of=/dev/sdX status=progress && sync
 ```
-**(Substitua o X pela letra do seu dispositivo ex: 'sdc' 'sdd') use: lsblk**
+**(Substitua o X pela letra do seu dispositivo ex: "sdc, sdd") use: lsblk**
 
 ------
 
@@ -48,14 +48,14 @@ Para criar um USB bootable usando o comando (dd) no Linux:
 ------
 
 ### 🔶 VERIFIQUE O MODO DE INICIALIZAÇÃO: (UEFI)
+> Se este comando a seguir listar as **variáveis EFI**, isso significa que você iniciou a operação com sucesso no modo **EFI**. Caso contrário, reinicie no **menu de boot** novamente e selecione o item correto lá, e não o item **legacy-mode**.
 ```
 # efivar -l
 ```
-Se este comando listar as **variáveis EFI**, isso significa que você iniciou a operação com sucesso no modo **EFI**. Caso contrário, reinicie no **menu de boot** novamente e selecione o item correto lá, e não o item **legacy-mode**.
-
-Se o diretório não existir, o sistema pode ser inicializado no modo **BIOS** ou **CSM**.
+> Se o diretório não existir, o sistema pode ser inicializado no modo **BIOS** ou **CSM**.
 
 ### TECLADO EM ABNT2
+> Setar layout br-abnt2 para o teclado
 ```
 # loadkeys br-abnt2
 ```
@@ -84,7 +84,7 @@ Se o diretório não existir, o sistema pode ser inicializado no modo **BIOS** o
 # fdisk -l
 # cfdisk /dev/sdX
 ```
-**(Substitua o X pela letra do seu disco rígido ex: 'sda' 'sdb')**
+**(Substitua o X pela letra do seu disco rígido ex: "sda, sdb")**
 
 #### 🔶 Particionar Disco **(UEFI)**
 
@@ -98,14 +98,14 @@ Se o diretório não existir, o sistema pode ser inicializado no modo **BIOS** o
 # fdisk -l
 # sgdisk --zap-all /dev/sdX
 ```
-**(Substitua o X pela letra do seu disco rígido ex: 'sda' 'sdb')**
+**(Substitua o X pela letra do seu disco rígido ex: "sda, sdb")**
 
-Primeiro, devemos criar uma nova tabela de partição, no caso será **GPT**, para o suporte à **UEFI**.
+> Primeiro, devemos criar uma nova tabela de partição, no caso será **GPT**, para o suporte à **UEFI**.
 Vamos utilizar o **gdisk** para a criação das partições `/boot` `/swap` `/root`
 ```
 # gdisk /dev/sdX
 ```
-**(Substitua o X pela letra do seu disco rígido ex: 'sda' 'sdb')**
+**(Substitua o X pela letra do seu disco rígido ex: "sda, sdb")**
 
 > Logo em seguida você entrará na interface do gdisk, onde deverá particionar o disco, ele possui uma interface simples mas eficaz, basta seguir o exemplo abaixo:
 ```
@@ -140,7 +140,7 @@ Hex Code or GUID: 8300
 
 
 ### FORMATAR AS PARTIÇÕES
-> Após o particionameto do disco rígido, devemos formatar as partições.
+Após o particionameto do disco rígido, devemos formatar as partições.
 #### Formatar `/root` `/swap` **(BIOS)**
 > Root:
 ```
