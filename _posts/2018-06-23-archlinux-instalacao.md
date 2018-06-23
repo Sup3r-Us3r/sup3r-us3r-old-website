@@ -32,6 +32,7 @@ Faça o download do Arch Linux: [Baixar](https://www.archlinux.org/download/)
 Para criar um USB bootable no:
 * Linux: [Etcher](https://etcher.io/) - [RosaImageWriter](http://wiki.rosalab.com/en/index.php/ROSA_ImageWriter)
 * Windows: [Rufus](https://rufus.akeo.ie) - [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)
+
 Para criar um USB bootable usando o comando (dd) no Linux:
 ```
 # dd bs=4M if=/lugar_onde_esta_sua_iso of=/dev/sdX status=progress && sync
@@ -73,6 +74,8 @@ Para criar um USB bootable usando o comando (dd) no Linux:
 ```
 
 ### PARTICIONAMENTO DE DISCO
+Chegou a hora de particionar o disco, essa etapa é de extrema importancia para a instalação e o funcionamento do sistema.
+
 #### Particionar Disco **(BIOS)**
 
 ![bios](https://raw.githubusercontent.com/Sup3r-Us3r/Arch-Install/master/Particionamento%20de%20Disco/parti%C3%A7%C3%B5es%20bios.gif)
@@ -140,8 +143,7 @@ Hex Code or GUID: 8300
 
 
 ### FORMATAR AS PARTIÇÕES
-Após o particionameto do disco rígido, devemos formatar as partições.
-
+> Após o particionameto do disco rígido, devemos formatar as partições.
 > Formatar `/root` `/swap` **(BIOS)**
 > Root:
 ```
@@ -166,7 +168,6 @@ Após o particionameto do disco rígido, devemos formatar as partições.
 
 ### MONTAGEM DAS PARTIÇÕES
 > Antes de podermos baixar, e instalar os pacotes base do Arch Linux, precisamos montar nossas partições, e mudar para o nosso diretório root. Afinal, é nele onde vamos instalar o Arch Linux.
-
 > Montar `/root` **(BIOS)**
 > Root:
 ```
