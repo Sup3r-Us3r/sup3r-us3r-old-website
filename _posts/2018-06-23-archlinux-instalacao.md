@@ -138,51 +138,51 @@ Hex Code or GUID: 8300
 ![uefi](https://raw.githubusercontent.com/Sup3r-Us3r/Arch-Install/master/Particionamento%20de%20Disco/parti%C3%A7%C3%B5es%20uefi.gif)
 
 ### FORMATAR AS PARTIÇÕES
-Após o particionameto do disco rígido, devemos formatar as partições.
+> Após o particionameto do disco rígido, devemos formatar as partições.
 #### Formatar `/root` `/swap` **(BIOS)**
-Root:
+> Root:
 ```
 # mkfs.ext4 /dev/sda1
 ```
-Swap:
+> Swap:
 ```
 # mkswap /dev/sda2
 # swapon /dev/sda2
 ```
 
 #### 🔶 Formatar `/boot` `/swap` `/root` **(UEFI)**
-Boot:
+> Boot:
 ```
 # mkfs.vfat -F32 /dev/sda1
 ```
-Swap:
+> Swap:
 ```
 # mkswap /dev/sda2
 # swapon /dev/sda2
 ```
 
 ### MONTAGEM DAS PARTIÇÕES
-Antes de podermos baixar, e instalar os pacotes base do Arch Linux, precisamos montar nossas partições, e mudar para o nosso diretório root. Afinal, é nele onde vamos instalar o Arch Linux.
+> Antes de podermos baixar, e instalar os pacotes base do Arch Linux, precisamos montar nossas partições, e mudar para o nosso diretório root. Afinal, é nele onde vamos instalar o Arch Linux.
 
 #### Montar `/root` **(BIOS)**
-Root:
+> Root:
 ```
 # mount -t ext4 /dev/sda1 /mnt
 ```
 
 #### 🔶 Montar `/boot` `/root` **(UEFI)**
-Boot:
+> Boot:
 ```
 # mkdir -p /mnt/boot/efi
 # mount /dev/sda1 /mnt/boot/efi
 ```
-Root:
+> Root:
 ```
 # mount /dev/sda3 /mnt
 ```
 
 ### ESCOLHER O ESPELHO DE DOWNLOAD
-Escolher a lista de espelhos mais próxima
+> Escolher a lista de espelhos mais próxima
 ```
 # pacman -Sy reflector
 # reflector --verbose -l 5 --sort rate --save /etc/pacman.d/mirrorlist
@@ -194,11 +194,11 @@ Escolher a lista de espelhos mais próxima
 ```
 
 ### CONFIGURAR O FSTAB
-Para configurar fstab (tabela de sistemas de arquivos) execute:
+> Para configurar fstab (tabela de sistemas de arquivos) execute:
 ```
 # genfstab -U -p /mnt >> /mnt/etc/fstab
 ```
-Você deve sempre verificar se a entrada fstab está correta ou não, que será capaz de inicializar em seu sistema. Para verificar a entrada fstab, execute:
+> Você deve sempre verificar se a entrada fstab está correta ou não, que será capaz de inicializar em seu sistema. Para verificar a entrada fstab, execute:
 ```
 # cat /mnt/etc/fstab
 ```
@@ -206,45 +206,45 @@ Se tudo estiver OK você deve ver o root montado.
 
 
 ### NOVO SISTEMA
-Agora é hora de mudar para o diretório root recém-instalado para configurá-lo.
+> Agora é hora de mudar para o diretório root recém-instalado para configurá-lo.
 ```
 # arch-chroot /mnt
 # loadkeys br-abnt2 (para usar o layout abnt2)
 ```
 
 ### CONFIGURAR KEYMAP
-A variável KEYMAP é especificada no arquivo /etc/vconsole.conf . Ele define qual layout de teclado, será usado nos consoles virtuais. Execute este comando:
+> A variável KEYMAP é especificada no arquivo /etc/vconsole.conf . Ele define qual layout de teclado, será usado nos consoles virtuais. Execute este comando:
 ```
 # echo -e 'KEYMAP="br-abnt2.map.gz"' > /etc/vconsole.conf
 ```
 
 ### CONFIGURAÇÕES DE IDIOMA E FUSO HORÁRIO
-Para configurar o idioma do sistema, execute o seguinte comando:
+> Para configurar o idioma do sistema, execute o seguinte comando:
 ```
 # sed -i '/pt_BR/,+1 s/^#//' /etc/locale.gen
 # locale-gen
 # echo LANG=pt_BR.UTF-8 > /etc/locale.conf
 # export LANG=pt_BR.UTF-8
 ```
-Para ver todos os fusos horários disponíveis da América:
+> Para ver todos os fusos horários disponíveis da América:
 ```
 # ls /usr/share/zoneinfo/America
 ```
-Agora você pode configurar a sua zona:
+> Agora você pode configurar a sua zona:
 ```
 # ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 ```
-Vamos agora configurar o relógio do hardware, apenas no caso de termos uma data errada:
+> Vamos agora configurar o relógio do hardware, apenas no caso de termos uma data errada:
 ```
 # hwclock --systohc --utc
 ```
-Para conferir se a hora está certa:
+> Para conferir se a hora está certa:
 ```
 # date
 ```
 
 ### CONFIGURAR REPOSITÓRIO
-Com este comando habilitamos o repositório multilib:
+> Com este comando habilitamos o repositório multilib:
 ```
 # sed -i '/multilib\]/,+1 s/^#//' /etc/pacman.conf
 # pacman -Sy
@@ -256,11 +256,11 @@ Com este comando habilitamos o repositório multilib:
 ```
 
 ### CONFIGURANDO A CONEXÃO
-Ethernet:
+> Ethernet:
 ```
 # systemctl enable dhcpcd
 ```
-Wifi:
+> Wifi:
 ```
 # pacman -S wpa_supplicant wpa_actiond dialog iw networkmanager
 # systemctl enable NetworkManager
@@ -271,21 +271,22 @@ Wifi:
 ```
 # useradd -m -g users -G wheel,storage,power -s /bin/bash ghost
 ```
-Em seguida, forneça a senha para este novo usuário executando:
+> Em seguida, forneça a senha para este novo usuário executando:
 ```
 # passwd ghost
 ```
-Não se esqueça de definir também a senha para o usuário **root**:
+> Não se esqueça de definir também a senha para o usuário **root**:
 ```
 # passwd
 ```
-Permitir que os usuários no grupo wheel, sejam capazes de executar tarefas administrativas com o sudo:
+> Permitir que os usuários no grupo wheel, sejam capazes de executar tarefas administrativas com o sudo:
 ```
 # sed -i '/%wheel ALL=(ALL) ALL/s/^#//' /etc/sudoers
 ```
 
 ### INSTALAR BOOT-LOADER (GRUB)
-Instalar e configurar o boot-loader **(BIOS)**
+
+> Instalar e configurar o boot-loader **(BIOS)**
 ```
 # mkinitcpio -p linux
 # pacman -S grub
@@ -294,7 +295,7 @@ Instalar e configurar o boot-loader **(BIOS)**
 # pacman -S intel-ucode (Se você tiver uma CPU Intel, instale o pacote intel-ucode)
 # grub-mkconfig -o /boot/grub/grub.cfg
 ```
-🔶 Instalar e configurar o boot-loader **(UEFI)**
+> 🔶 Instalar e configurar o boot-loader **(UEFI)**
 ```
 # mkinitcpio -p linux
 # pacman -S grub efibootmgr
@@ -303,7 +304,7 @@ Instalar e configurar o boot-loader **(BIOS)**
 # pacman -S intel-ucode (Se você tiver uma CPU Intel, instale o pacote intel-ucode)
 # grub-mkconfig -o /boot/grub/grub.cfg
 ```
-🔶 Caso der erro ao tentar instalar o grub, tente outro modo: **(UEFI)**
+> 🔶 Caso der erro ao tentar instalar o grub, tente outro modo: **(UEFI)**
 ```
 # grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub --recheck
 ```
@@ -316,34 +317,36 @@ Instalar e configurar o boot-loader **(BIOS)**
 ```
 
 ### PÓS INSTALAÇÃO
->Após a instalação do Arch Linux a única coisa que os usuários vêem é uma linha de comando sem qualquer servidor X, então o usuário deve instalar o X server, uma área de trabalho e alguns outros aplicativos para fazer seu trabalhos diários.
+> Após a instalação do Arch Linux a única coisa que os usuários vêem é uma linha de comando sem qualquer servidor X, então o usuário deve instalar o X server, uma área de trabalho e alguns outros aplicativos para fazer seu trabalhos diários.
 
-Logue com seu **usuário** e **senha**:
+> Logue com seu **usuário** e **senha**:
 ```
 $ su
 # loadkeys br-abnt2 (para usar o layout abnt2)
 ```
-Conecte a sua rede wireless (Caso tenha)
+> Conecte a sua rede wireless (Caso tenha)
 ```
 # nmtui
 ```
-Verificar a conectividade com a internet:
+> Verificar a conectividade com a internet:
 ```
 # ping -c3 www.google.com
 ```
 
 ### INSTALAR DISPLAY SERVER
-Um display server ou servidor de janela é um programa cuja principal tarefa é coordenar a entrada e saída de seus clientes para o sistema operacional, o hardware e entre eles. Em outras palavras, o display server controla e gerencia os recursos de baixo nível para ajudar a integrar as partes da GUI. Por exemplo, os display server gerenciam o mouse e ajudam a combinar os movimentos do mouse com o cursor e os eventos GUI causados pelo cursor. Mas não se confunda, o servidor de exibição não desenha nada. Eles apenas gerenciam a interface, as bibliotecas, os toolkits e, como você pode ver, eles se comunicam diretamente com o kernel. Vamos usar o [XORG](https://wiki.archlinux.org/index.php/Xorg_(Portugu%C3%AAs))
+
+> Um display server ou servidor de janela é um programa cuja principal tarefa é coordenar a entrada e saída de seus clientes para o sistema operacional, o hardware e entre eles. Em outras palavras, o display server controla e gerencia os recursos de baixo nível para ajudar a integrar as partes da GUI. Por exemplo, os display server gerenciam o mouse e ajudam a combinar os movimentos do mouse com o cursor e os eventos GUI causados pelo cursor. Mas não se confunda, o servidor de exibição não desenha nada. Eles apenas gerenciam a interface, as bibliotecas, os toolkits e, como você pode ver, eles se comunicam diretamente com o kernel. Vamos usar o [XORG](https://wiki.archlinux.org/index.php/Xorg_(Portugu%C3%AAs))
 ```
 # pacman -S xorg-server xorg-xinit xorg-apps mesa ttf-dejavu gvfs-mtp
 ```
 
 ### INSTALAR DRIVERS GRÁFICOS
-É hora de instalar drivers de vídeo. Eu suponho que você sabe qual GPU você está usando. Se você não sabe qual drive de vídeo você possui, descubra com esse comando:
+
+> É hora de instalar drivers de vídeo. Eu suponho que você sabe qual GPU você está usando. Se você não sabe qual drive de vídeo você possui, descubra com esse comando:
 ```
 # lspci -k | grep -A 2 -i "VGA"
 ```
-Instale o que for referente ao seu:
+> Instale o que for referente ao seu:
 ```
 # pacman -S virtualbox-guest-utils (para Virtualbox)
 # pacman -S xf86-video-amdgpu (para placas Amd Radeon)
@@ -351,6 +354,7 @@ Instale o que for referente ao seu:
 # pacman -S xf86-video-nouveau (para placas Nvidia) #OpenSource
 ```
 Espera!!! Eu quero instalar o driver proprietário da **Nvidia/ATI**, qual driver devo instalar?
+
 ### Nvidia
 #### ✅ Instale o driver apropriado para a sua placa:
 
@@ -382,7 +386,8 @@ Espera!!! Eu quero instalar o driver proprietário da **Nvidia/ATI**, qual drive
  > Nota: xf86-video-ati é especificado como radeon para o kernel em xorg.conf
  
 ### ADVANCED LINUX SOUND ARCHITECTURE (ALSA)
-Agora, vamos instalar os aplicativos para placa de som:
+
+> Agora, vamos instalar os aplicativos para placa de som:
 ```
 # pacman -S alsa-utils alsa-lib pulseaudio pulseaudio-alsa pavucontrol
 ```
@@ -392,57 +397,58 @@ Depois de instalar o servidor X você precisa de um ambiente de um Gerenciador d
 
 ### `Gerenciadores de Janelas`
 
-I3wm:
+> I3wm:
 ```
 # pacman -S i3
 ```
-Bspwm:
+> Bspwm:
 ```
 # pacman -S bspwm sxhkd
 ```
-Dwm:
+> Dwm:
 ```
 # pacman -S dwm
 ```
-Awesome:
+> Awesome:
 ```
 # pacman -S awesome
 ```
 
 ### `Interfaces Gráficas`
-Xfce4 Desktop Environment:
+
+> Xfce4 Desktop Environment:
 ```
 # pacman -S xfce4 
 ```
-Budgie Desktop Environment:
+> Budgie Desktop Environment:
 ```
 # pacman -S budgie-desktop
 ```
-GNOME Desktop Environment:
+> GNOME Desktop Environment:
 ```
 # pacman -S gnome gnome-extra
 ```
-Cinnamon Desktop Environment:
+> Cinnamon Desktop Environment:
 ```
 # pacman -S cinnamon nemo-fileroller
 ```
-KDE Desktop Environment:
+> KDE Desktop Environment:
 ```
 # pacman -S plasma-desktop kdebase
 ```
-Mate Desktop Environment:
+> Mate Desktop Environment:
 ```
 # pacman -S mate mate-extra
 ```
-Deepin Desktop Environment:
+> Deepin Desktop Environment:
 ```
 # pacman -S deepin deepin-extra
 ```
-Enlightenment Desktop Environment:
+> Enlightenment Desktop Environment:
 ```
 # pacman -S enlightenment
 ```
-LXDE Desktop Environment:
+> LXDE Desktop Environment:
 ```
 # pacman -S lxde
 ```
