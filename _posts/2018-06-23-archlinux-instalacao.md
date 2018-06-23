@@ -16,7 +16,7 @@ Uma das maiores vantagens da distribuição Arch Linux é a sua simplicidade na 
 
 **Os princípios de design por trás do Arch são destinados a mantê-lo simples:**
 
->«Simples», neste contexto, significa «sem adições, modificações ou complicações desnecessárias». Em resumo; Uma abordagem elegante e minimalista.
+> "Simples", neste contexto, significa sem adições, modificações ou complicações desnecessárias. Em resumo; Uma abordagem elegante e minimalista.
 
 
 **Alguns pensamentos a ter em mente ao considerar a simplicidade:**
@@ -29,10 +29,10 @@ Uma das maiores vantagens da distribuição Arch Linux é a sua simplicidade na 
 
 * Faça o download do Arch Linux: [Baixar](https://www.archlinux.org/download/)
 
-* Para criar um USB bootable no:
-  * Linux: [Etcher](https://etcher.io/) - [RosaImageWriter](http://wiki.rosalab.com/en/index.php/ROSA_ImageWriter)
-  * Windows: [Rufus](https://rufus.akeo.ie) - [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)
-* Para criar um USB bootable usando o comando (dd) no Linux:
+Para criar um USB bootable no:
+* Linux: [Etcher](https://etcher.io/) - [RosaImageWriter](http://wiki.rosalab.com/en/index.php/ROSA_ImageWriter)
+* Windows: [Rufus](https://rufus.akeo.ie) - [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)
+Para criar um USB bootable usando o comando (dd) no Linux:
 ```
 # dd bs=4M if=/lugar_onde_esta_sua_iso of=/dev/sdX status=progress && sync
 ```
@@ -61,12 +61,12 @@ Se o diretório não existir, o sistema pode ser inicializado no modo **BIOS** o
 ```
 
 ### CONEXÃO COM A INTERNET
-Ethernet:
+> Ethernet:
 ```
 # systemctl start dhcpcd
 # ping -c3 google.com
 ```
-Wifi:
+> Wifi:
 ```
 # wifi-menu
 # ping -c3 www.google.com
@@ -74,22 +74,26 @@ Wifi:
 
 ### PARTICIONAMENTO DE DISCO
 #### Particionar Disco **(BIOS)**
-* Aconselha-se dar
-  * /swap = 4gb
-  * /raiz = Todo o restante do HD
+
+![bios](https://raw.githubusercontent.com/Sup3r-Us3r/Arch-Install/master/Particionamento%20de%20Disco/parti%C3%A7%C3%B5es%20bios.gif)
+
+> Aconselha-se dar
+> * /swap = 4gb
+> * /raiz = Todo o restante do HD
 ```
 # fdisk -l
 # cfdisk /dev/sdX
 ```
 **(Substitua o X pela letra do seu disco rígido ex: 'sda' 'sdb')**
 
-![bios](https://raw.githubusercontent.com/Sup3r-Us3r/Arch-Install/master/Particionamento%20de%20Disco/parti%C3%A7%C3%B5es%20bios.gif)
-
 #### 🔶 Particionar Disco **(UEFI)**
-* Aconselha-se dar
-  * /boot = 300mb
-  * /swap = 4gb
-  * /raiz = Todo o restante do HD
+
+![uefi](https://raw.githubusercontent.com/Sup3r-Us3r/Arch-Install/master/Particionamento%20de%20Disco/parti%C3%A7%C3%B5es%20uefi.gif)
+
+> Aconselha-se dar
+> * /boot = 300mb
+> * /swap = 4gb
+> * /raiz = Todo o restante do HD
 ```
 # fdisk -l
 # sgdisk --zap-all /dev/sdX
@@ -104,7 +108,6 @@ Vamos utilizar o **gdisk** para a criação das partições `/boot` `/swap` `/ro
 **(Substitua o X pela letra do seu disco rígido ex: 'sda' 'sdb')**
 
 > Logo em seguida você entrará na interface do gdisk, onde deverá particionar o disco, ele possui uma interface simples mas eficaz, basta seguir o exemplo abaixo:
-
 ```
 Command (? for help): o
 Proceed? (Y/N): Y
@@ -135,7 +138,6 @@ Hex Code or GUID: 8300
 ```
 > Esta última partição criada é a root, não daremos tamanho para ela, só aperte ENTER, que o gdisk entenderá que é pra aproveitar todo o restante do HD **(essa partição servirá para a instalação do sistema, seus arquivos pessoais, programas etc)**.
 
-![uefi](https://raw.githubusercontent.com/Sup3r-Us3r/Arch-Install/master/Particionamento%20de%20Disco/parti%C3%A7%C3%B5es%20uefi.gif)
 
 ### FORMATAR AS PARTIÇÕES
 > Após o particionameto do disco rígido, devemos formatar as partições.
@@ -150,7 +152,7 @@ Hex Code or GUID: 8300
 # swapon /dev/sda2
 ```
 
-#### 🔶 Formatar `/boot` `/swap` `/root` **(UEFI)**
+> #### 🔶 Formatar `/boot` `/swap` `/root` **(UEFI)**
 > Boot:
 ```
 # mkfs.vfat -F32 /dev/sda1
@@ -189,6 +191,7 @@ Hex Code or GUID: 8300
 ```
 
 ### INSTALAR OS PACOTES BASE DO ARCH LINUX
+> Esta na hora de instalar a base do sistema
 ```
 # pacstrap -i /mnt base base-devel
 ```
@@ -251,6 +254,7 @@ Se tudo estiver OK você deve ver o root montado.
 ```
 
 ### DEFINIR HOSTNAME
+> Agora você vai setar o nome que você deseja ter na sua maquina, basta trocar o "arch" pelo nome que quiser, mas ele não pode conter espaços.
 ```
 # echo arch > /etc/hostname
 ```
@@ -310,6 +314,7 @@ Se tudo estiver OK você deve ver o root montado.
 ```
 
 ### DESMONTAR AS PARTIÇÕES E REINICIAR
+> Desmonte as partições e reinicie para poder ir para o próximo passo, a pós instalação.
 ```
 # exit
 # umount -R /mnt
@@ -393,9 +398,9 @@ Espera!!! Eu quero instalar o driver proprietário da **Nvidia/ATI**, qual drive
 ```
 
 ### INSTALAR AMBIENTE DE TRABALHO
-Depois de instalar o servidor X você precisa de um ambiente de um Gerenciador de janelas ou Desktop para fazer seus trabalhos diários!
+> Depois de instalar o servidor X você precisa de um ambiente seja ele um Gerenciador de Janelas ou Desktop Environment para fazer seus trabalhos diários!
 
-### `Gerenciadores de Janelas`
+#### `Gerenciadores de Janelas`
 
 > I3wm:
 ```
@@ -414,7 +419,7 @@ Depois de instalar o servidor X você precisa de um ambiente de um Gerenciador d
 # pacman -S awesome
 ```
 
-### `Interfaces Gráficas`
+#### `Interfaces Gráficas`
 
 > Xfce4 Desktop Environment:
 ```
@@ -454,9 +459,9 @@ Depois de instalar o servidor X você precisa de um ambiente de um Gerenciador d
 ```
 
 ### DISPLAY MANAGER OU LOGIN MANAGER
-Por exemplo, se você estiver instalando o Xfce (DE) você notará que não existe um ambiente de login gráfico. Então, isso significa que você pode fazer login usando a linha de comando e, em seguida, iniciar o Xfce ou instalar um gerenciador de login como o LXDM, que - após um login bem-sucedido - iniciará o Xfce para você.
+> Por exemplo, se você estiver instalando o Xfce (DE) você notará que não existe um ambiente de login gráfico. Então, isso significa que você pode fazer login usando a linha de comando e, em seguida, iniciar o Xfce ou instalar um gerenciador de login como o LXDM, que - após um login bem-sucedido - iniciará o Xfce para você.
 
-Exemplo: Lxdm
+> Exemplo: Lxdm
 ```
 # pacman -S lxdm
 # systemctl enable lxdm.service
@@ -465,14 +470,14 @@ Exemplo: Lxdm
 Existem outras alternativas como: **Gdm**, **Sddm** etc.
 
 ### YAOURT
-Alguns pacotes não podem ser encontrados no repositório principal, por isso temos o AUR onde possamos encontra-los e instalá-los, e para fazer isto precisamos adicionar o endereço AUR no final do arquivo /etc/pacman.conf.
+> Alguns pacotes não podem ser encontrados no repositório principal, por isso temos o AUR onde possamos encontra-los e instalá-los, e para fazer isto precisamos adicionar o endereço AUR no final do arquivo /etc/pacman.conf.
 ```
 # echo -e "[archlinuxfr]\nSigLevel = Never\nServer=http://repo.archlinux.fr/\$arch" >> /etc/pacman.conf
 # pacman -Sy yaourt
 ```
 
 ### RECOMENDAÇÕES FINAIS
-Caso use um notebook, você deve instalar os drivers do seu touchpad:
+> Caso use um notebook, você deve instalar os drivers do seu touchpad:
 ```
 # pacman -S xf86-input-synaptics
 ```
