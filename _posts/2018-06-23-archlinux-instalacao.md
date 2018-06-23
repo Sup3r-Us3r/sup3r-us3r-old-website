@@ -32,7 +32,6 @@ Faça o download do Arch Linux: [Baixar](https://www.archlinux.org/download/)
 Para criar um USB bootable no:
 * Linux: [Etcher](https://etcher.io/) - [RosaImageWriter](http://wiki.rosalab.com/en/index.php/ROSA_ImageWriter)
 * Windows: [Rufus](https://rufus.akeo.ie) - [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)
-
 Para criar um USB bootable usando o comando (dd) no Linux:
 ```
 # dd bs=4M if=/lugar_onde_esta_sua_iso of=/dev/sdX status=progress && sync
@@ -74,8 +73,6 @@ Para criar um USB bootable usando o comando (dd) no Linux:
 ```
 
 ### PARTICIONAMENTO DE DISCO
-Chegou a hora de particionar o disco, essa etapa é de extrema importancia para a instalação e o funcionamento do sistema.
-
 #### Particionar Disco **(BIOS)**
 
 ![bios](https://raw.githubusercontent.com/Sup3r-Us3r/Arch-Install/master/Particionamento%20de%20Disco/parti%C3%A7%C3%B5es%20bios.gif)
@@ -111,6 +108,7 @@ Vamos utilizar o **gdisk** para a criação das partições `/boot` `/swap` `/ro
 **(Substitua o X pela letra do seu disco rígido ex: "sda, sdb")**
 
 > Logo em seguida você entrará na interface do gdisk, onde deverá particionar o disco, ele possui uma interface simples mas eficaz, basta seguir o exemplo abaixo:
+
 ```
 Command (? for help): o
 Proceed? (Y/N): Y
@@ -143,8 +141,8 @@ Hex Code or GUID: 8300
 
 
 ### FORMATAR AS PARTIÇÕES
-> Após o particionameto do disco rígido, devemos formatar as partições.
-> Formatar `/root` `/swap` **(BIOS)**
+Após o particionameto do disco rígido, devemos formatar as partições.
+#### Formatar `/root` `/swap` **(BIOS)**
 > Root:
 ```
 # mkfs.ext4 /dev/sda1
@@ -155,7 +153,7 @@ Hex Code or GUID: 8300
 # swapon /dev/sda2
 ```
 
-> 🔶 Formatar `/boot` `/swap` `/root` **(UEFI)**
+> #### 🔶 Formatar `/boot` `/swap` `/root` **(UEFI)**
 > Boot:
 ```
 # mkfs.vfat -F32 /dev/sda1
@@ -168,13 +166,14 @@ Hex Code or GUID: 8300
 
 ### MONTAGEM DAS PARTIÇÕES
 > Antes de podermos baixar, e instalar os pacotes base do Arch Linux, precisamos montar nossas partições, e mudar para o nosso diretório root. Afinal, é nele onde vamos instalar o Arch Linux.
-> Montar `/root` **(BIOS)**
+
+#### Montar `/root` **(BIOS)**
 > Root:
 ```
 # mount -t ext4 /dev/sda1 /mnt
 ```
 
-> 🔶 Montar `/boot` `/root` **(UEFI)**
+#### 🔶 Montar `/boot` `/root` **(UEFI)**
 > Boot:
 ```
 # mkdir -p /mnt/boot/efi
