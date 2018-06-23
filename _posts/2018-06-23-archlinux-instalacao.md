@@ -4,6 +4,7 @@ title:  "Instalação Arch Linux"
 date:   2018-06-23 13:40:00 +0000
 categories: Linux
 tags: archlinux instalacao
+comments: 1
 ---
 ### INSTALAÇÃO ARCH LINUX
 
