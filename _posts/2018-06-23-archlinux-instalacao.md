@@ -175,17 +175,15 @@ Hex Code or GUID: 8300
 <br/><br/>
 
 ### MONTAGEM DAS PARTIÇÕES
+
 > Antes de podermos baixar, e instalar os pacotes base do Arch Linux, precisamos montar nossas partições, e mudar para o nosso diretório root. Afinal, é nele onde vamos instalar o Arch Linux.
 
-#### Montar `/root` **(BIOS)**
+> ##### Montar `/root` **(BIOS)**
 > Root:
 ```
 # mount -t ext4 /dev/sda1 /mnt
 ```
-
-<br/>
-
-#### 🔶 Montar `/boot` `/root` **(UEFI)**
+> ##### 🔶 Montar `/boot` `/root` **(UEFI)**
 > Boot:
 ```
 # mkdir -p /mnt/boot/efi
