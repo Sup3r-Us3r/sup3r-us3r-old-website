@@ -30,7 +30,8 @@ Uma das maiores vantagens da distribuição Arch Linux é a sua simplicidade na 
 
 <br/>
 
-#### Faça o download do Arch Linux: [Baixar](https://www.archlinux.org/download/)
+### FAÇA O DOWNLOAD DO ARCH LINUX: [BAIXAR](https://www.archlinux.org/download/)
+
 
 | USB BOOTABLE | DOWNLOAD | VIA COMANDO DD LINUX |
 |--|--|--|
@@ -110,6 +111,8 @@ Uma das maiores vantagens da distribuição Arch Linux é a sua simplicidade na 
 ```
 **(Substitua o X pela letra do seu disco rígido ex: "sda, sdb")**
 
+<br/>
+
 > Primeiro, devemos criar uma nova tabela de partição, no caso será **GPT**, para o suporte à **UEFI**.
 Vamos utilizar o **gdisk** para a criação das partições `/boot` `/swap` `/root`
 ```
@@ -118,7 +121,6 @@ Vamos utilizar o **gdisk** para a criação das partições `/boot` `/swap` `/ro
 **(Substitua o X pela letra do seu disco rígido ex: "sda, sdb")**
 
 > Logo em seguida você entrará na interface do gdisk, onde deverá particionar o disco, ele possui uma interface simples mas eficaz, basta seguir o exemplo abaixo:
-
 ```
 Command (? for help): o
 Proceed? (Y/N): Y
