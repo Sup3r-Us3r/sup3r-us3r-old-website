@@ -30,7 +30,7 @@ Uma das maiores vantagens da distribuição Arch Linux é a sua simplicidade na 
 
 <br/>
 
-### FAÇA O DOWNLOAD DO ARCH LINUX: [BAIXAR](https://www.archlinux.org/download/)
+#### FAÇA O DOWNLOAD DO ARCH LINUX: [BAIXAR](https://www.archlinux.org/download/)
 
 
 | USB BOOTABLE | DOWNLOAD | VIA COMANDO DD LINUX |
@@ -111,17 +111,15 @@ Uma das maiores vantagens da distribuição Arch Linux é a sua simplicidade na 
 ```
 **(Substitua o X pela letra do seu disco rígido ex: "sda, sdb")**
 
-<br/>
-
 > Primeiro, devemos criar uma nova tabela de partição, no caso será **GPT**, para o suporte à **UEFI**.
 Vamos utilizar o **gdisk** para a criação das partições `/boot` `/swap` `/root`
-
 ```
 # gdisk /dev/sdX
 ```
 **(Substitua o X pela letra do seu disco rígido ex: "sda, sdb")**
 
 > Logo em seguida você entrará na interface do gdisk, onde deverá particionar o disco, ele possui uma interface simples mas eficaz, basta seguir o exemplo abaixo:
+
 ```
 Command (? for help): o
 Proceed? (Y/N): Y
@@ -151,6 +149,29 @@ Last sector: Aperte Enter
 Hex Code or GUID: 8300
 ```
 > Esta última partição criada é a root, não daremos tamanho para ela, só aperte ENTER, que o gdisk entenderá que é pra aproveitar todo o restante do HD **(essa partição servirá para a instalação do sistema, seus arquivos pessoais, programas etc)**.
+
+<br/><br/>
+
+### FORMATAR AS PARTIÇÕES
+
+> Formatar Root **(BIOS)**
+```
+# mkfs.ext4 /dev/sda1
+```
+> Formatar Swap **(BIOS)**
+```
+# mkswap /dev/sda2
+# swapon /dev/sda2
+```
+> 🔶 Formatar Boot **(UEFI)**
+```
+# mkfs.vfat -F32 /dev/sda1
+```
+> 🔶 Formatar Swap **(UEFI)**
+```
+# mkswap /dev/sda2
+# swapon /dev/sda2
+```
 
 <br/><br/>
 
