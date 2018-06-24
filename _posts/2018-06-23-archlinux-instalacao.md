@@ -114,7 +114,8 @@ Uma das maiores vantagens da distribuição Arch Linux é a sua simplicidade na 
 <br/>
 
 > Primeiro, devemos criar uma nova tabela de partição, no caso será **GPT**, para o suporte à **UEFI**.
-Vamos utilizar o **gdisk** para a criação das partições /boot /swap /root
+Vamos utilizar o **gdisk** para a criação das partições `/boot` `/swap` `/root`
+
 ```
 # gdisk /dev/sdX
 ```
