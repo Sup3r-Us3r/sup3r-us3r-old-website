@@ -47,6 +47,7 @@ Para criar um USB bootable no:
 * Preste muita atenção em relação a sua unidade do disco rígido, pois isso vai variar de computador parar computador.
 
 ------
+<br/><br/>
 
 ### 🔶 VERIFIQUE O MODO DE INICIALIZAÇÃO: (UEFI)
 > Se este comando a seguir listar as **variáveis EFI**, isso significa que você iniciou a operação com sucesso no modo **EFI**. Caso contrário, reinicie no **menu de boot** novamente e selecione o item correto lá, e não o item **legacy-mode**.
