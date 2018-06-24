@@ -30,15 +30,11 @@ Uma das maiores vantagens da distribuição Arch Linux é a sua simplicidade na 
 
 Faça o download do Arch Linux: [Baixar](https://www.archlinux.org/download/)
 
-| USB BOOTABLE | DOWNLOAD |
-|--|--|
-| LINUX | [Etcher](https://etcher.io) - [RosaImageWriter](http://wiki.rosalab.com/en/index.php/ROSA_ImageWriter) |
+| USB BOOTABLE | DOWNLOAD | VIA COMANDO DD LINUX |
+|--|--|--|
+| LINUX | [Etcher](https://etcher.io) - [RosaImageWriter](http://wiki.rosalab.com/en/index.php/ROSA_ImageWriter) | dd bs=4M if=/lugar_onde_esta_sua_iso of=/dev/sdX status=progress && sync |
 | WINDOWS | [Rufus](https://rufus.akeo.ie) - [Win32DiskImager](https://sourceforge.net/projects/win32diskimager) |
 
-Para criar um USB bootable usando o comando (dd) no Linux:
-```
-# dd bs=4M if=/lugar_onde_esta_sua_iso of=/dev/sdX status=progress && sync
-```
 **(Substitua o X pela letra do seu dispositivo ex: "sdc, sdd") use: lsblk**
 
 ------
