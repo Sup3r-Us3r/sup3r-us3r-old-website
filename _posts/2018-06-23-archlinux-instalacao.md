@@ -45,7 +45,7 @@ Faça o download do Arch Linux: [Baixar](https://www.archlinux.org/download/)
 * Preste muita atenção em relação a sua unidade do disco rígido, pois isso vai variar de computador parar computador.
 
 ------
-<br/><br/>
+<br/>
 
 ### 🔶 VERIFIQUE O MODO DE INICIALIZAÇÃO: (UEFI)
 > Se este comando a seguir listar as **variáveis EFI**, isso significa que você iniciou a operação com sucesso no modo **EFI**. Caso contrário, reinicie no **menu de boot** novamente e selecione o item correto lá, e não o item **legacy-mode**.
@@ -54,11 +54,15 @@ Faça o download do Arch Linux: [Baixar](https://www.archlinux.org/download/)
 ```
 > Se o diretório não existir, o sistema pode ser inicializado no modo **BIOS** ou **CSM**.
 
+<br/><br/>
+
 ### TECLADO EM ABNT2
 > Setar layout br-abnt2 para o teclado
 ```
 # loadkeys br-abnt2
 ```
+
+<br/><br/>
 
 ### CONEXÃO COM A INTERNET
 > Ethernet:
@@ -71,6 +75,8 @@ Faça o download do Arch Linux: [Baixar](https://www.archlinux.org/download/)
 # wifi-menu
 # ping -c3 www.google.com
 ```
+
+<br/><br/>
 
 ### PARTICIONAMENTO DE DISCO
 #### Particionar Disco **(BIOS)**
@@ -85,6 +91,8 @@ Faça o download do Arch Linux: [Baixar](https://www.archlinux.org/download/)
 # cfdisk /dev/sdX
 ```
 **(Substitua o X pela letra do seu disco rígido ex: "sda, sdb")**
+
+<br/>
 
 #### 🔶 Particionar Disco **(UEFI)**
 
@@ -139,6 +147,7 @@ Hex Code or GUID: 8300
 ```
 > Esta última partição criada é a root, não daremos tamanho para ela, só aperte ENTER, que o gdisk entenderá que é pra aproveitar todo o restante do HD **(essa partição servirá para a instalação do sistema, seus arquivos pessoais, programas etc)**.
 
+<br/><br/>
 
 ### FORMATAR AS PARTIÇÕES
 Após o particionameto do disco rígido, devemos formatar as partições.
@@ -164,6 +173,8 @@ Após o particionameto do disco rígido, devemos formatar as partições.
 # swapon /dev/sda2
 ```
 
+<br/><br/>
+
 ### MONTAGEM DAS PARTIÇÕES
 > Antes de podermos baixar, e instalar os pacotes base do Arch Linux, precisamos montar nossas partições, e mudar para o nosso diretório root. Afinal, é nele onde vamos instalar o Arch Linux.
 
@@ -172,6 +183,8 @@ Após o particionameto do disco rígido, devemos formatar as partições.
 ```
 # mount -t ext4 /dev/sda1 /mnt
 ```
+
+<br/>
 
 #### 🔶 Montar `/boot` `/root` **(UEFI)**
 > Boot:
@@ -184,6 +197,8 @@ Após o particionameto do disco rígido, devemos formatar as partições.
 # mount /dev/sda3 /mnt
 ```
 
+<br/><br/>
+
 ### ESCOLHER O ESPELHO DE DOWNLOAD
 > Escolher a lista de espelhos mais próxima
 ```
@@ -191,11 +206,15 @@ Após o particionameto do disco rígido, devemos formatar as partições.
 # reflector --verbose -l 5 --sort rate --save /etc/pacman.d/mirrorlist
 ```
 
+<br/><br/>
+
 ### INSTALAR OS PACOTES BASE DO ARCH LINUX
 > Esta na hora de instalar a base do sistema
 ```
 # pacstrap -i /mnt base base-devel
 ```
+
+<br/><br/>
 
 ### CONFIGURAR O FSTAB
 > Para configurar fstab (tabela de sistemas de arquivos) execute:
@@ -208,6 +227,7 @@ Após o particionameto do disco rígido, devemos formatar as partições.
 ```
 Se tudo estiver OK você deve ver o root montado.
 
+<br/><br/>
 
 ### NOVO SISTEMA
 > Agora é hora de mudar para o diretório root recém-instalado para configurá-lo.
@@ -216,11 +236,15 @@ Se tudo estiver OK você deve ver o root montado.
 # loadkeys br-abnt2 (para usar o layout abnt2)
 ```
 
+<br/><br/>
+
 ### CONFIGURAR KEYMAP
 > A variável KEYMAP é especificada no arquivo /etc/vconsole.conf . Ele define qual layout de teclado, será usado nos consoles virtuais. Execute este comando:
 ```
 # echo -e 'KEYMAP="br-abnt2.map.gz"' > /etc/vconsole.conf
 ```
+
+<br/><br/>
 
 ### CONFIGURAÇÕES DE IDIOMA E FUSO HORÁRIO
 > Para configurar o idioma do sistema, execute o seguinte comando:
@@ -247,6 +271,8 @@ Se tudo estiver OK você deve ver o root montado.
 # date
 ```
 
+<br/><br/>
+
 ### CONFIGURAR REPOSITÓRIO
 > Com este comando habilitamos o repositório multilib:
 ```
@@ -254,11 +280,15 @@ Se tudo estiver OK você deve ver o root montado.
 # pacman -Sy
 ```
 
+<br/><br/>
+
 ### DEFINIR HOSTNAME
 > Agora você vai setar o nome que você deseja ter na sua maquina, basta trocar o "arch" pelo nome que quiser, mas ele não pode conter espaços.
 ```
 # echo arch > /etc/hostname
 ```
+
+<br/><br/>
 
 ### CONFIGURANDO A CONEXÃO
 > Ethernet:
@@ -270,6 +300,8 @@ Se tudo estiver OK você deve ver o root montado.
 # pacman -S wpa_supplicant wpa_actiond dialog iw networkmanager
 # systemctl enable NetworkManager
 ```
+
+<br/><br/>
 
 ### CRIAR USUÁRIO
 > useradd -m -g [initial_group] -G [additional_groups] -s [login_shell] [username]
@@ -288,6 +320,8 @@ Se tudo estiver OK você deve ver o root montado.
 ```
 # sed -i '/%wheel ALL=(ALL) ALL/s/^#//' /etc/sudoers
 ```
+
+<br/><br/>
 
 ### INSTALAR BOOT-LOADER (GRUB)
 
@@ -314,6 +348,8 @@ Se tudo estiver OK você deve ver o root montado.
 # grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub --recheck
 ```
 
+<br/><br/>
+
 ### DESMONTAR AS PARTIÇÕES E REINICIAR
 > Desmonte as partições e reinicie para poder ir para o próximo passo, a pós instalação.
 ```
@@ -321,6 +357,8 @@ Se tudo estiver OK você deve ver o root montado.
 # umount -R /mnt
 # poweroff
 ```
+
+<br/><br/>
 
 ### PÓS INSTALAÇÃO
 > Após a instalação do Arch Linux a única coisa que os usuários vêem é uma linha de comando sem qualquer servidor X, então o usuário deve instalar o X server, uma área de trabalho e alguns outros aplicativos para fazer seu trabalhos diários.
@@ -339,12 +377,16 @@ $ su
 # ping -c3 www.google.com
 ```
 
+<br/><br/>
+
 ### INSTALAR DISPLAY SERVER
 
 > Um display server ou servidor de janela é um programa cuja principal tarefa é coordenar a entrada e saída de seus clientes para o sistema operacional, o hardware e entre eles. Em outras palavras, o display server controla e gerencia os recursos de baixo nível para ajudar a integrar as partes da GUI. Por exemplo, os display server gerenciam o mouse e ajudam a combinar os movimentos do mouse com o cursor e os eventos GUI causados pelo cursor. Mas não se confunda, o servidor de exibição não desenha nada. Eles apenas gerenciam a interface, as bibliotecas, os toolkits e, como você pode ver, eles se comunicam diretamente com o kernel. Vamos usar o [XORG](https://wiki.archlinux.org/index.php/Xorg_(Portugu%C3%AAs))
 ```
 # pacman -S xorg-server xorg-xinit xorg-apps mesa ttf-dejavu gvfs-mtp
 ```
+
+<br/><br/>
 
 ### INSTALAR DRIVERS GRÁFICOS
 
@@ -398,6 +440,8 @@ Espera!!! Eu quero instalar o driver proprietário da **Nvidia/ATI**, qual drive
 # pacman -S alsa-utils alsa-lib pulseaudio pulseaudio-alsa pavucontrol
 ```
 
+<br/><br/>
+
 ### INSTALAR AMBIENTE DE TRABALHO
 > Depois de instalar o servidor X você precisa de um ambiente seja ele um Gerenciador de Janelas ou Desktop Environment para fazer seus trabalhos diários!
 
@@ -419,6 +463,8 @@ Espera!!! Eu quero instalar o driver proprietário da **Nvidia/ATI**, qual drive
 ```
 # pacman -S awesome
 ```
+
+<br/>
 
 #### `Interfaces Gráficas`
 
@@ -459,6 +505,8 @@ Espera!!! Eu quero instalar o driver proprietário da **Nvidia/ATI**, qual drive
 # pacman -S lxde
 ```
 
+<br/><br/>
+
 ### DISPLAY MANAGER OU LOGIN MANAGER
 > Por exemplo, se você estiver instalando o Xfce (DE) você notará que não existe um ambiente de login gráfico. Então, isso significa que você pode fazer login usando a linha de comando e, em seguida, iniciar o Xfce ou instalar um gerenciador de login como o LXDM, que - após um login bem-sucedido - iniciará o Xfce para você.
 
@@ -470,12 +518,16 @@ Espera!!! Eu quero instalar o driver proprietário da **Nvidia/ATI**, qual drive
 ```
 Existem outras alternativas como: **Gdm**, **Sddm** etc.
 
+<br/><br/>
+
 ### YAOURT
 > Alguns pacotes não podem ser encontrados no repositório principal, por isso temos o AUR onde possamos encontra-los e instalá-los, e para fazer isto precisamos adicionar o endereço AUR no final do arquivo /etc/pacman.conf.
 ```
 # echo -e "[archlinuxfr]\nSigLevel = Never\nServer=http://repo.archlinux.fr/\$arch" >> /etc/pacman.conf
 # pacman -Sy yaourt
 ```
+
+<br/><br/>
 
 ### RECOMENDAÇÕES FINAIS
 > Caso use um notebook, você deve instalar os drivers do seu touchpad:
