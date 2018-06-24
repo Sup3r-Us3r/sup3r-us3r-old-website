@@ -31,7 +31,7 @@ Uma das maiores vantagens da distribuição Arch Linux é a sua simplicidade na 
 <br/>
 
 #### FAÇA O DOWNLOAD DO ARCH LINUX: [BAIXAR](https://www.archlinux.org/download/)
-
+<br/>
 
 | USB BOOTABLE | DOWNLOAD | VIA COMANDO DD LINUX |
 |--|--|--|
