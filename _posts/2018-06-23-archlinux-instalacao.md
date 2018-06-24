@@ -433,6 +433,8 @@ Espera!!! Eu quero instalar o driver proprietário da **Nvidia/ATI**, qual drive
    
  > Nota: xf86-video-ati é especificado como radeon para o kernel em xorg.conf
  
+<br/><br/>
+ 
 ### ADVANCED LINUX SOUND ARCHITECTURE (ALSA)
 
 > Agora, vamos instalar os aplicativos para placa de som:
