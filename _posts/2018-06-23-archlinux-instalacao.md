@@ -28,7 +28,9 @@ Uma das maiores vantagens da distribuição Arch Linux é a sua simplicidade na 
 
 ------
 
-Faça o download do Arch Linux: [Baixar](https://www.archlinux.org/download/)
+<br/>
+
+#### Faça o download do Arch Linux: [Baixar](https://www.archlinux.org/download/)
 
 | USB BOOTABLE | DOWNLOAD | VIA COMANDO DD LINUX |
 |--|--|--|
@@ -150,24 +152,21 @@ Hex Code or GUID: 8300
 <br/><br/>
 
 ### FORMATAR AS PARTIÇÕES
-Após o particionameto do disco rígido, devemos formatar as partições.
-#### Formatar `/root` `/swap` **(BIOS)**
-> Root:
+
+> Formatar Root **(BIOS)**
 ```
 # mkfs.ext4 /dev/sda1
 ```
-> Swap:
+> Formatar Swap **(BIOS)**
 ```
 # mkswap /dev/sda2
 # swapon /dev/sda2
 ```
-
-> #### 🔶 Formatar `/boot` `/swap` `/root` **(UEFI)**
-> Boot:
+> 🔶 Formatar Boot **(UEFI)**
 ```
 # mkfs.vfat -F32 /dev/sda1
 ```
-> Swap:
+> 🔶 Formatar Swap **(UEFI)**
 ```
 # mkswap /dev/sda2
 # swapon /dev/sda2
@@ -536,3 +535,5 @@ Existem outras alternativas como: **Gdm**, **Sddm** etc.
 ```
 # pacman -S xf86-input-synaptics
 ```
+
+<br/><br/>
