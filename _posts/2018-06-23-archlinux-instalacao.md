@@ -175,29 +175,6 @@ Hex Code or GUID: 8300
 
 <br/><br/>
 
-### FORMATAR AS PARTIÇÕES
-
-> Formatar Root **(BIOS)**
-```
-# mkfs.ext4 /dev/sda1
-```
-> Formatar Swap **(BIOS)**
-```
-# mkswap /dev/sda2
-# swapon /dev/sda2
-```
-> 🔶 Formatar Boot **(UEFI)**
-```
-# mkfs.vfat -F32 /dev/sda1
-```
-> 🔶 Formatar Swap **(UEFI)**
-```
-# mkswap /dev/sda2
-# swapon /dev/sda2
-```
-
-<br/><br/>
-
 ### MONTAGEM DAS PARTIÇÕES
 
 > Antes de podermos baixar, e instalar os pacotes base do Arch Linux, precisamos montar nossas partições, e mudar para o nosso diretório root. Afinal, é nele onde vamos instalar o Arch Linux.
