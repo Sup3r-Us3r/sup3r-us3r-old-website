@@ -422,7 +422,7 @@ $ su
 ```
 Espera!!! Eu quero instalar o driver proprietário da **Nvidia/ATI**, qual driver devo instalar?
 
-##### ✅Nvidia - Instale o driver apropriado para a sua placa:
+##### Nvidia - Instale o driver apropriado para a sua placa:
 
 >  * Para placas da série **GeForce 400 ou mais recentes** [NVCx ou mais recente], instale o pacote `nvidia` ou `nvidia-lts` disponível nos repositórios oficiais.
   
@@ -434,7 +434,7 @@ Espera!!! Eu quero instalar o driver proprietário da **Nvidia/ATI**, qual drive
   
 >  * Se você estiver com sistema de `64 bits` você também precisa de um suporte OpenGL de 32 bits, você também deve instalar o pacote lib32 equivalente do repositório multilib (e.g. `lib32-nvidia-libgl`, `lib32-nvidia-340xx-libgl` ou `lib32-nvidia-304xx-libgl` ).
 
-##### ✅ Ati - O driver xf86-video-ati (radeon):
+##### Ati - O driver xf86-video-ati (radeon):
 
 >  * Funciona com chipsets Radeon até HD 6xxx e 7xxxM (latest Northern Islands chipsets).
    
@@ -446,9 +446,10 @@ Espera!!! Eu quero instalar o driver proprietário da **Nvidia/ATI**, qual drive
   
 >  * Suporta DRI1, RandR 1.2 / 1.3 / 1.4, Glamour, aceleração do EXA e configuração do modo kernel / DRI2.
    
-  * Geralmente, o **xf86-video-ati** deve ser sua primeira escolha, independentemente do driver AMD / ATI que você possui. No caso de você precisar usar um driver para drivers AMD mais novos, você deve considerar o driver de catalisador proprietário.
-   
- > Nota: xf86-video-ati é especificado como radeon para o kernel em xorg.conf
+>  * Geralmente, o **xf86-video-ati** deve ser sua primeira escolha, independentemente do driver AMD / ATI que você possui. No caso de você precisar usar um driver para drivers AMD mais novos, você deve considerar o driver de catalisador proprietário.
+
+
+> Nota: xf86-video-ati é especificado como radeon para o kernel em xorg.conf
  
 <br/><br/>
  
