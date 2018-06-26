@@ -100,7 +100,7 @@ Uma das maiores vantagens da distribuição Arch Linux é a sua simplicidade na 
 # fdisk -l
 # cfdisk /dev/sdX
 ```
-> A interface do cfdisk é bem simples, basta selecionar o tipo **DOS** criar uma partição que vai conter o tamanho total do seu HD para a **raiz** e em seguida torna essa partição **bootable**, a partição **swap** não é necessária, só vem a ser útil se você tiver pouca memória ram.
+> A interface do cfdisk é bem simples, basta selecionar o tipo **DOS** criar uma partição que vai conter o tamanho total do seu HD para a **raiz** e em seguida tornar essa partição **bootable**, a partição **swap** não é necessária, só vem a ser útil se você tiver pouca memória ram.
 
 <br/>
 
@@ -129,9 +129,11 @@ Vamos utilizar o **gdisk** para a criação das partições `/boot` `/swap` `/ro
 ```
 # gdisk /dev/sdX
 ```
+
 > Logo em seguida você entrará na interface do gdisk, onde deverá particionar o disco, ele possui uma interface simples mas eficaz, basta seguir o exemplo abaixo:
 
 > Abaixo criaremos uma partição com 300Mb de espaço **(não precisa mais que 300mb para essa partição)** do tipo EFI, para nossa partição de boot.
+
 ```
 Command (? for help): o
 Proceed? (Y/N): Y
