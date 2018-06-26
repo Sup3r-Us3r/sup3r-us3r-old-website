@@ -82,22 +82,27 @@ Uma das maiores vantagens da distribuição Arch Linux é a sua simplicidade na 
 <br/><br/>
 
 ### PARTICIONAMENTO DE DISCO
-#### Particionar Disco **(BIOS)**
+
+> Particionar Disco **(BIOS)**
 
 ![bios](https://raw.githubusercontent.com/Sup3r-Us3r/Arch-Install/master/Particionamento%20de%20Disco/parti%C3%A7%C3%B5es%20bios.gif)
 
 > Aconselha-se dar
 > * /swap = 4gb
 > * /raiz = Todo o restante do HD
+---
+> Agora vamos listar o seu HD e usar o cfdisk para para começar a criação das partições.
+
+> **(Substitua o X pela letra do seu disco rígido ex: "sda, sdb")**
 ```
 # fdisk -l
 # cfdisk /dev/sdX
 ```
-**(Substitua o X pela letra do seu disco rígido ex: "sda, sdb")**
+> A interface do cfdisk é bem simples, basta selecionar o tipo **DOS** criar uma partição que vai conter o tamanho total do seu HD para a **raiz** e em seguida torna essa partição **bootable**, a partição **swap** não é necessária, só vem a ser útil se você tiver pouca memória ram.
 
 <br/>
 
-#### 🔶 Particionar Disco **(UEFI)**
+> 🔶 Particionar Disco **(UEFI)**
 
 ![uefi](https://raw.githubusercontent.com/Sup3r-Us3r/Arch-Install/master/Particionamento%20de%20Disco/parti%C3%A7%C3%B5es%20uefi.gif)
 
@@ -105,50 +110,53 @@ Uma das maiores vantagens da distribuição Arch Linux é a sua simplicidade na 
 > * /boot = 300mb
 > * /swap = 4gb
 > * /raiz = Todo o restante do HD
+---
+> Agora vamos listar o seu HD e usar o sgdisk para formatar ele (obs: esse comando vai formatar o seu hd, caso você tenha conteúdo que não possa perder, não execute esse comando!)
+
+> **(Substitua o X pela letra do seu disco rígido ex: "sda, sdb")**
 ```
 # fdisk -l
 # sgdisk --zap-all /dev/sdX
 ```
-**(Substitua o X pela letra do seu disco rígido ex: "sda, sdb")**
-
-> Primeiro, devemos criar uma nova tabela de partição, no caso será **GPT**, para o suporte à **UEFI**.
+> Agora devemos primeiro, criar uma nova tabela de partição, no caso será **GPT**, para o suporte à **UEFI**.
 Vamos utilizar o **gdisk** para a criação das partições `/boot` `/swap` `/root`
+
+> **(Substitua o X pela letra do seu disco rígido ex: "sda, sdb")**
 ```
 # gdisk /dev/sdX
 ```
-**(Substitua o X pela letra do seu disco rígido ex: "sda, sdb")**
-
 > Logo em seguida você entrará na interface do gdisk, onde deverá particionar o disco, ele possui uma interface simples mas eficaz, basta seguir o exemplo abaixo:
 
+> Abaixo criaremos uma partição com 300Mb de espaço **(não precisa mais que 300mb para essa partição)** do tipo EFI, para nossa partição de boot.
 ```
 Command (? for help): o
 Proceed? (Y/N): Y
 
-Para criar nova partição:
+Para criar nova partição
+------------------------
 
 Command (? for help): n
-Partition number: Aperte Enter
+Partition number: Enter
 First sector: Enter
 Last sector: +300M
 Hex Code or GUID: EF00
 ```
-> Acima criamos uma partição com 300Mb de espaço **(não precisa mais que 300mb para essa partição)** do tipo EFI, para nossa partição de boot.
+> Abaixo, criaremos nossa partição SWAP com 2gb de espaço, **(o swap é uma memória virtual recomendo dar no máximo 4gb)**.
 ```
 Command (? for help): n
-Partition number: Aperte Enter
+Partition number: Enter
 First sector: Enter
 Last sector: +2G
 Hex Code or GUID: 8200
 ```
-> Acima, criamos a nossa partição SWAP com 2gb de espaço, **(o swap é uma memória virtual recomendo dar no máximo 4gb)**.
+> Abaixo criaremos a última partição a partição root, não daremos tamanho para ela, só aperte ENTER, que o gdisk entenderá que é pra aproveitar todo o restante do HD **(essa partição servirá para a instalação do sistema, seus arquivos pessoais, programas etc)**.
 ```
 Command (? for help): n
-Partition number: Aperte Enter
-First sector: Aperte Enter
-Last sector: Aperte Enter
+Partition number: Enter
+First sector: Enter
+Last sector: Enter
 Hex Code or GUID: 8300
 ```
-> Esta última partição criada é a root, não daremos tamanho para ela, só aperte ENTER, que o gdisk entenderá que é pra aproveitar todo o restante do HD **(essa partição servirá para a instalação do sistema, seus arquivos pessoais, programas etc)**.
 
 <br/><br/>
 
