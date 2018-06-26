@@ -90,7 +90,9 @@ Uma das maiores vantagens da distribuição Arch Linux é a sua simplicidade na 
 > Aconselha-se dar
 > * /swap = 4gb
 > * /raiz = Todo o restante do HD
+
 ---
+
 > Agora vamos listar o seu HD e usar o cfdisk para para começar a criação das partições.
 
 > **(Substitua o X pela letra do seu disco rígido ex: "sda, sdb")**
@@ -110,7 +112,9 @@ Uma das maiores vantagens da distribuição Arch Linux é a sua simplicidade na 
 > * /boot = 300mb
 > * /swap = 4gb
 > * /raiz = Todo o restante do HD
+
 ---
+
 > Agora vamos listar o seu HD e usar o sgdisk para formatar ele (obs: esse comando vai formatar o seu hd, caso você tenha conteúdo que não possa perder, não execute esse comando!)
 
 > **(Substitua o X pela letra do seu disco rígido ex: "sda, sdb")**
