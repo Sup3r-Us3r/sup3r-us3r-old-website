@@ -6,7 +6,6 @@ categories: Linux
 tags: archlinux instalacao
 comments: 1
 ---
-### INSTALAÇÃO ARCH LINUX
 
 Este guia destina-se a ajudar alguém a instalar a distribuição Arch Linux  em seu Computador. O guia pressupõe que você tenha alguma familiaridade com o sistema linux e esteja confortável, trabalhando a partir da linha de comando, mas não exige que você seja um especialista. Aprendemos muito fazendo e se você quiser saber mais sobre como o linux opera, o Arch Linux é uma excelente opção por muitas razões.
 
