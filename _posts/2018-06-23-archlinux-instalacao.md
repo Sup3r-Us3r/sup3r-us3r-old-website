@@ -147,7 +147,9 @@ First sector: Enter
 Last sector: +300M
 Hex Code or GUID: EF00
 ```
+
 > Abaixo, criaremos nossa partição SWAP com 2gb de espaço, **(o swap é uma memória virtual recomendo dar no máximo 4gb)**.
+
 ```
 Command (? for help): n
 Partition number: Enter
@@ -155,7 +157,9 @@ First sector: Enter
 Last sector: +2G
 Hex Code or GUID: 8200
 ```
+
 > Abaixo criaremos a última partição a partição root, não daremos tamanho para ela, só aperte ENTER, que o gdisk entenderá que é pra aproveitar todo o restante do HD **(essa partição servirá para a instalação do sistema, seus arquivos pessoais, programas etc)**.
+
 ```
 Command (? for help): n
 Partition number: Enter
