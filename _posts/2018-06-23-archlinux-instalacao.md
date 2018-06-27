@@ -546,17 +546,17 @@ Existem outras alternativas como: **Gdm**, **Sddm** etc.
 ### APLICATIVOS RECOMENDADOS
 ##### Recomendações finais.
 
-| Descrição                 | Packages                                             |
-| ----------                | --------                                             |
-| `Terminal`                | <kbd>termite</kbd>                                   |
-| `Compositor`              | <kbd>compton</kbd>                                   |
-| `Gerenciador de Arquivos` | <kbd>nautilus</kbd> - <kbd>thunar</kbd>              |
-| `Editor de Texto`         | <kbd>leafpad</kbd>                                   |
-| `Fonte`                   | <kbd>Fantasque Sans Mono</kbd>                       |
-| `Tema GTK`                | <kbd>numix-gtk-theme</kbd>                           |
-| `Navegador`               | <kbd>google-chrome-stable</kbd> - <kbd>firefox</kbd> |
-| `Música`                  | <kbd>audacious</kbd>                                 |
-| `Vídeo`                   | <kbd>vlc</kbd>                                       |
-| `IDE`                     | <kbd>visual-studio-code</kbd>                        |
+| Descrição                 | Packages                                 |
+| ----------                | --------                                 |
+| Terminal                  | **termite**                              |
+| Compositor                | **compton**                              |
+| Gerenciador de Arquivos   | **nautilus**  -  **thunar**              |
+| Editor de Texto           | **leafpad**                              |
+| Fonte                     | **ttf-fantasque-sans-mono**              |
+| Tema GTK                  | **numix-gtk-theme**                      |
+| Navegador                 | **google-chrome-stable**  -  **firefox** |
+| Música                    | **audacious**                            |
+| Vídeo                     | **vlc**                                  |
+| IDE                       | **visual-studio-code**                   |
 
 <br/><br/>
