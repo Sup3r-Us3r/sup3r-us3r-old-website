@@ -546,17 +546,17 @@ Existem outras alternativas como: **Gdm**, **Sddm** etc.
 ### APLICATIVOS RECOMENDADOS
 ##### Recomendações finais.
 
-| Descrição                 | Packages                                 |
-| ----------                | --------                                 |
-| Terminal                  | __termite__                              |
-| Compositor                | **compton**                              |
-| Gerenciador de Arquivos   | **nautilus**  -  **thunar**              |
-| Editor de Texto           | **leafpad**                              |
-| Fonte                     | **ttf-fantasque-sans-mono**              |
-| Tema GTK                  | **numix-gtk-theme**                      |
-| Navegador                 | **google-chrome-stable**  -  **firefox** |
-| Música                    | **audacious**                            |
-| Vídeo                     | **vlc**                                  |
-| IDE                       | **visual-studio-code**                   |
+| Descrição                 | Packages                                       |
+| ----------                | --------                                       |
+| Terminal                  | <u>termite</u>                                 |
+| Compositor                | <u>compton</u>                                 |
+| Gerenciador de Arquivos   | <u>nautilus</u>  -  <u>thunar</u>              |
+| Editor de Texto           | <u>leafpad</u>                                 |
+| Fonte                     | <u>ttf-fantasque-sans-mono</u>                 |
+| Tema GTK                  | <u>numix-gtk-theme</u>                         |
+| Navegador                 | <u>google-chrome-stable</u>  -  <u>firefox</u> |
+| Música                    | <u>audacious</u>                               |
+| Vídeo                     | <u>vlc</u>                                     |
+| IDE                       | <u>visual-studio-code</u>                      |
 
 <br/><br/>
