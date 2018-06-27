@@ -548,7 +548,7 @@ Existem outras alternativas como: **Gdm**, **Sddm** etc.
 
 | Descrição                 | Packages                                 |
 | ----------                | --------                                 |
-| Terminal                  | **termite**                              |
+| Terminal                  | __termite__                              |
 | Compositor                | **compton**                              |
 | Gerenciador de Arquivos   | **nautilus**  -  **thunar**              |
 | Editor de Texto           | **leafpad**                              |
