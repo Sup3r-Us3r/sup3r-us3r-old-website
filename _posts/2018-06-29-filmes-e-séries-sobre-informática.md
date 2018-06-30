@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Filmes e séries sobre informática"
+title:  "Filmes e séries sobre informática"
 date:   2018-06-29 21:40:00 +0000
 categories: Dicas
 tags: filmes series
