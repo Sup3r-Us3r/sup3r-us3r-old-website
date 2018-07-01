@@ -18,7 +18,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Desenvolvido para meus projetos
 baseurl: ""
 url: "https://sup3r-us3r.github.io"
-permalink: /:year/:month/:day/:title
+permalink: /:day/:month/:year/:title
 repository: Sup3r-Us3r/sup3r-us3r.github.io
 paginate: 5
 
