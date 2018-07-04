@@ -121,4 +121,12 @@ A proposta aqui é criarmos uma lista de filmes, séries e documentários que en
 
 -   Tron (Tron: Uma Odisséia Eletrônica)
 
+<br/><br/>
+
+<p align="center">  
+<b>NÃO ESQUEÇA DE COMPARTILHAR ESTE POST</b>
+<br>
 <div class="sharethis-inline-share-buttons"></div>
+</p>
+
+<br/><br/>
