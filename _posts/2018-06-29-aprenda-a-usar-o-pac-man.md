@@ -177,3 +177,13 @@ yaourt -Rsn nome
 ```
 yaourt -Syu –devel –aur
 ```
+
+<br/><br/>
+
+<p align="center">  
+<b>NÃO ESQUEÇA DE COMPARTILHAR ESTE POST</b>
+<br>
+<div class="sharethis-inline-share-buttons"></div>
+</p>
+
+<br/><br/>
