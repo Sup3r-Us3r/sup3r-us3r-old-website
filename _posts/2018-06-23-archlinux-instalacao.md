@@ -7,6 +7,13 @@ tags: archlinux instalacao
 comments: 1
 ---
 
+<style>
+img{
+	max-width:100%;
+	height:auto;
+}
+</style>
+
 Este guia destina-se a ajudar alguém a instalar a distribuição Arch Linux  em seu Computador. O guia pressupõe que você tenha alguma familiaridade com o sistema linux e esteja confortável, trabalhando a partir da linha de comando, mas não exige que você seja um especialista. Aprendemos muito fazendo e se você quiser saber mais sobre como o linux opera, o Arch Linux é uma excelente opção por muitas razões.
 
 **Porquê Arch ?**
@@ -84,7 +91,7 @@ Uma das maiores vantagens da distribuição Arch Linux é a sua simplicidade na 
 
 > Particionar Disco **(BIOS)**
 
-![bios](https://raw.githubusercontent.com/Sup3r-Us3r/Arch-Install/master/Particionamento%20de%20Disco/parti%C3%A7%C3%B5es%20bios.gif)
+<img src="https://raw.githubusercontent.com/Sup3r-Us3r/Arch-Install/master/Particionamento%20de%20Disco/parti%C3%A7%C3%B5es%20bios.gif" />
 
 > Aconselha-se dar
 > * /swap = 4gb
