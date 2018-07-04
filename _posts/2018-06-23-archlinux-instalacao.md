@@ -560,3 +560,11 @@ Existem outras alternativas como: **Gdm**, **Sddm** etc.
 | IDE                       | <u>visual-studio-code</u>                      |
 
 <br/><br/>
+
+<p align="center">  
+<b>NÃO ESQUEÇA DE COMPARTILHAR ESTE POST</b>
+<br>
+<div class="sharethis-inline-share-buttons"></div>
+</p>
+
+<br/><br/>
