@@ -9,14 +9,14 @@ js: ["post.js"]
     <li>
       <div class="collapsible-header">
         <span>
-          <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Date">date_range</i>
+          <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Data">date_range</i>
           {{page.date | date: "%d/%m/%Y %H:%M"}}
-          <i id="indicate" class="right material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Show extra info">info</i>
+          <i id="indicate" class="right material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Mais info">info</i>
         </span>
       </div>
       <div class="collapsible-body">
         <span>
-          <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Categories">sort</i>
+          <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Categorias">sort</i>
           {% for cat in page.categories %}
           {% capture test %}{{cat | slice: 0}}{% endcapture %}
           {% capture testup %}{{cat | slice: 0 | upcase}}{% endcapture %}
