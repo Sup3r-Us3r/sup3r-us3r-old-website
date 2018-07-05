@@ -35,6 +35,13 @@ Normal   _Italics_   **Bold**
 
 > Blockquote
 
+<style>
+img{
+	max-width:100%;
+	height:auto;
+}
+</style>
+
 <p align="center">
   <b>Imagem</b><br>
 <img src="https://cdn.awsli.com.br/600x450/61/61161/produto/13660217/7f4678f8a9.jpg" />
