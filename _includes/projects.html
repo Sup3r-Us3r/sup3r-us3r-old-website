@@ -1,13 +1,3 @@
-<link rel="manifest" href="/manifest.json" />
-<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-<script>
-  var OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "67f2500b-d638-4484-9464-d17d52ff28fb",
-    });
-  });
-</script>
 {% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count') | reverse  %}
 <div class="col s12 switch">
   <label>
