@@ -1,7 +1,7 @@
 <h1>
 	<p align="center">
 	<a href="https://sup3r-us3r.github.io" target="_blank"><b>SUP3R-US3R.GITHUB.IO</b></a>
-	<br/>
+	<br>
 	<b>:globe_with_meridians: DESENVOLVIDO PARA MEUS PROJETOS</b>
 	</p>
 
