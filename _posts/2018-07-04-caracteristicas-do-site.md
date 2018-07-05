@@ -15,9 +15,7 @@ Esse post é voltado somente para demonstração de todas as características qu
 #### Texto 4
 ##### Texto 5
 
-Normal
- _Italics_
-**Bold**
+Normal   _Italics_   **Bold**
 
 * lista
 * lista
@@ -38,7 +36,7 @@ Normal
 > Blockquote
 
 <p align="center">
-Imagem
+  <b>Imagem</b><br>
 <img src="https://cdn.awsli.com.br/600x450/61/61161/produto/13660217/7f4678f8a9.jpg" />
 </p>
 
@@ -53,8 +51,7 @@ Imagem
   <img src="https://i.giphy.com/media/cfuL5gqFDreXxkWQ4o/giphy.webp">
 </p>
 
-<td><g-emoji class="g-emoji" alias="+1" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png">👍</g-emoji></td>
-👍👍
+👍👍👍
 
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; width: 100%; } .embed-container iframe { position: absolute; width: 100%; height: 100%; border: none; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/dLx22jYFEfo'></iframe></div>
