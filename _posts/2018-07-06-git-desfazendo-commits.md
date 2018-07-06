@@ -7,12 +7,7 @@ tags: git
 comments: 1
 ---
 
-Espero que você já tenha lido o  [primeiro post sobre Git aqui](https://sup3r-us3r.github.io/06/07/2018/git-primeiros-passos). Neste segundo post vou ensinar como desfazer alterações com Git.
-
-<p align="center">  
-<b>Usando git checkout, reset, e revert na linha de comando.</b>
-<br>
-</p>
+Espero que você já tenha lido o  [primeiro post sobre Git aqui](https://sup3r-us3r.github.io/06/07/2018/git-primeiros-passos). Neste segundo post vou ensinar como desfazer alterações com Git usando git checkout, reset, e revert na linha de comando.
 
 ### Checkout
 
