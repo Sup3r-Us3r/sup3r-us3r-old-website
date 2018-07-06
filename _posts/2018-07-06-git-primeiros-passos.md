@@ -61,20 +61,17 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-O comando  <code>git status</code>  sempre vai retornar o estado atual do repositório e explicar o que você pode fazer em seguida. Neste caso não há commits criados ainda então você pode criar o primeiro com o arquivo  <code>README.md</code> . Devemos primeiro adicionar o arquivo a um commit com o comando:
-
+> O comando  <code>git status</code>  sempre vai retornar o estado atual do repositório e explicar o que você pode fazer em seguida. Neste caso não há commits criados ainda então você pode criar o primeiro com o arquivo  <code>README.md</code> . Devemos primeiro adicionar o arquivo a um commit com o comando:
 ```
 git add README.md
 ```
 
-Agora o arquivo está pronto para ser empacotado em um commit. Escreva o comando de commit incluindo uma mensagem que explique o que sua alteração faz no repositório.
-
+> Agora o arquivo está pronto para ser empacotado em um commit. Escreva o comando de commit incluindo uma mensagem que explique o que sua alteração faz no repositório.
 ```
 git commit -m "Adiciona arquivo README.md"
 ```
 
-Pronto, você fez o primeiro commit. Pode listar os commits mais recentes com o comando:
-
+> Pronto, você fez o primeiro commit. Pode listar os commits mais recentes com o comando:
 ```
 git log
 ```
