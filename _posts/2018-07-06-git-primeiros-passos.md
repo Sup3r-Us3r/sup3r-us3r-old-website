@@ -35,22 +35,16 @@ git init
 ### Crie o Commit
 
 > Um Commit é um pacote de alterações feitas no repositório. Cada commit possui arquivos alterados, autor e uma mensagem de resumo.
-
 > Vamos criar o primeiro commit criando um arquivo especial para o GitHub chamado  **README.md**. Dentro deste arquivo escreva:
 ```
-
 Meu repositório Git.
-
 ```
 > Salve o arquivo e agora você irá usar o comando mais usado em Git:
 ```
-
 git status
-
 ```
 > O resultado deve ser:
 ```
-
 On branch master
 
 Initial commit
@@ -61,26 +55,18 @@ Untracked files:
         README.md
 
 nothing added to commit but untracked files present (use "git add" to track)
-
 ```
 > O comando  <code>git status</code>  sempre vai retornar o estado atual do repositório e explicar o que você pode fazer em seguida. Neste caso não há commits criados ainda então você pode criar o primeiro com o arquivo  <code>README.md</code> . Devemos primeiro adicionar o arquivo a um commit com o comando:
 ```
-
 git add README.md
-
 ```
 > Agora o arquivo está pronto para ser empacotado em um commit. Escreva o comando de commit incluindo uma mensagem que explique o que sua alteração faz no repositório.
 ```
-
 git commit -m "Adiciona arquivo README.md"
-
 ```
-
 > Pronto, você fez o primeiro commit. Pode listar os commits mais recentes com o comando:
 ```
-
 git log
-
 ```
 
 <br/><br/>
