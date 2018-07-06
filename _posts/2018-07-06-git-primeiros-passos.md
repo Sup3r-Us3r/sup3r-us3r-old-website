@@ -34,21 +34,19 @@ git init
 
 ### Crie o Commit
 
-Um Commit é um pacote de alterações feitas no repositório. Cada commit possui arquivos alterados, autor e uma mensagem de resumo.
+> Um Commit é um pacote de alterações feitas no repositório. Cada commit possui arquivos alterados, autor e uma mensagem de resumo.
 
-Vamos criar o primeiro commit criando um arquivo especial para o GitHub chamado  **README.md**. Dentro deste arquivo escreva:
-
+> Vamos criar o primeiro commit criando um arquivo especial para o GitHub chamado  **README.md**. Dentro deste arquivo escreva:
 ```
 Meu repositório Git.
 ```
 
-Salve o arquivo e agora você irá usar o comando mais usado em Git:
-
+> Salve o arquivo, e agora você irá usar o comando mais usado em Git:
 ```
 git status
 ```
 
-O resultado deve ser:
+> O resultado deve ser:
 
 ```
 On branch master
