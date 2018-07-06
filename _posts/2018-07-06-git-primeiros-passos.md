@@ -7,21 +7,17 @@ tags: git
 comments: 1
 ---
 
-> Este rápido tutorial é pra você que já tem um conhecimento básico sobre ferramentas de controle de versão ou precisa de um guia rápido para Git com linha de comando. Também pode ser muito útil se você está apenas acostumado a usar outras ferramentas de desenvolvimento com Git e não sabe os comandos que são executados por trás dela. Aprenda os comandos e não ficará dependente de nenhum outro software. Veremos os comandos mais usados para se trabalhar com Git. Vou assumir que você já possui cadastro no  [GitHub](https://github.com/)  e já tem Git instalado em seu computador.
+Este rápido tutorial é pra você que já tem um conhecimento básico sobre ferramentas de controle de versão ou precisa de um guia rápido para Git com linha de comando. Também pode ser muito útil se você está apenas acostumado a usar outras ferramentas de desenvolvimento com Git e não sabe os comandos que são executados por trás dela. Aprenda os comandos e não ficará dependente de nenhum outro software. Veremos os comandos mais usados para se trabalhar com Git. Vou assumir que você já possui cadastro no  [GitHub](https://github.com/)  e já tem Git instalado em seu computador.
 
 <br/>
 
 ### Configure seu Usuário
 
 > O controle de versão controla quem faz as alterações num projeto. Então você deve configurar seu usuário:
-
 ```
-
 git config --global user.name "Meu.Usuário"
 git config --global user.email "meu.email@gmail.com"
-
 ```
-
 > Substitua com seu Usuário e E-mail da sua conta no GitHub.
 
 <br/><br/>
@@ -29,13 +25,9 @@ git config --global user.email "meu.email@gmail.com"
 ### Crie um Repositório
 
 > O repositório é onde estarão os arquivos versionados, no servidor Git e no seu computador em uma pasta. Crie uma pasta, já com o nome do seu repositório e execute o comando dentro dela:
-
 ```
-
 git init
-
 ```
-
 > No meu exemplo a pasta se chama  **Tutorial**
 
 <br/><br/>
