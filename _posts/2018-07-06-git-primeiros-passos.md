@@ -61,7 +61,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-> O comando  <code>git status</code>  sempre vai retornar o estado atual do repositório e explicar o que você pode fazer em seguida. Neste caso não há commits criados ainda então você pode criar o primeiro com o arquivo  <code>README.md</code> . Devemos primeiro adicionar o arquivo a um commit com o comando:
+> O comando  **git status**  sempre vai retornar o estado atual do repositório e explicar o que você pode fazer em seguida. Neste caso não há commits criados ainda então você pode criar o primeiro com o arquivo  **README.md** . Devemos primeiro adicionar o arquivo a um commit com o comando:
 ```
 git add README.md
 ```
@@ -81,14 +81,14 @@ git log
 
 ### Suba seus Commits
 
-> Agora você precisa sincronizar o seu repositório com o GitHub, mas ainda não fizemos nenhuma conexão entre eles. Acesse seu GitHub e na página inicial você encontrará o botão ➕ no canto superior direito, clicando nele você selecione a opção <code>New repository</code>
+> Agora você precisa sincronizar o seu repositório com o GitHub, mas ainda não fizemos nenhuma conexão entre eles. Acesse seu GitHub e na página inicial você encontrará o botão ➕ no canto superior direito, clicando nele você selecione a opção **New repository**
 
 > Crie o repositório com o nome que desejar, neste exemplo vou usar  **Tutorial**. Após criado, o repositório já exibirá os comandos necessários para iniciar e configurar o seu repositório localmente. Como já criamos o repositório localmente e queremos subí-lo no GitHub seguiremos com a opção  _“push an existing repository from the command line”_. Primeiro devemos configurar qual o repositório remoto. Execute usando a URL do seu repositório:
 ```
 git remote add origin https://github.com/Sup3r-Us3r/Tutorial.git
 ```
 
-> Com isso você configurou o remote <code>origin</code> para o GitHub. Você já pode subir seus commits para lá usando <code>git push</code>, mas na primeira vez o comando deve ser executado para configurar a branch  <code>master</code>  para o GitHub. Opa, logo falarei sobre branchs em outro post. Ao executar o comando será solicitado o usuário e senha para autenticar no GitHub.
+> Com isso você configurou o remote **origin** para o GitHub. Você já pode subir seus commits para lá usando **git push**, mas na primeira vez o comando deve ser executado para configurar a branch  **master**  para o GitHub. Opa, logo falarei sobre branchs em outro post. Ao executar o comando será solicitado o usuário e senha para autenticar no GitHub.
 ```
 git push -u origin master
 ```
@@ -112,7 +112,7 @@ git pull
 
 ### Baixe outros repositórios
 
-> Você pode querer baixar um repositório Git no seu computador e começar a commitar nele. Para isso existe o  <code>git clone</code> que basicamente faz o download do repositório, seus arquivos, commits e configuração de remotes. Você pode clonar qualquer repositório público no GitHub e outros servidores Git. Você precisa da URL Git desses repositórios, você pode obtê-la no botão **Clone or download**.
+> Você pode querer baixar um repositório Git no seu computador e começar a commitar nele. Para isso existe o  **git clone** que basicamente faz o download do repositório, seus arquivos, commits e configuração de remotes. Você pode clonar qualquer repositório público no GitHub e outros servidores Git. Você precisa da URL Git desses repositórios, você pode obtê-la no botão **Clone or download**.
 ```
 git clone https://github.com/Sup3r-Us3r/Tutorial.git
 ```
