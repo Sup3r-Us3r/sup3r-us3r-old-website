@@ -14,6 +14,7 @@ comments: 1
 ### Configure seu Usuário
 
 > O controle de versão controla quem faz as alterações num projeto. Então você deve configurar seu usuário:
+
 ```
 
 git config --global user.name "Meu.Usuário"
@@ -28,6 +29,7 @@ git config --global user.email "meu.email@gmail.com"
 ### Crie um Repositório
 
 > O repositório é onde estarão os arquivos versionados, no servidor Git e no seu computador em uma pasta. Crie uma pasta, já com o nome do seu repositório e execute o comando dentro dela:
+
 ```
 
 git init
