@@ -123,7 +123,7 @@ git clone https://github.com/Sup3r-Us3r/Tutorial.git
 
 ### Continue aprendendo…
 
-Ainda farei outros posts sobre Branchs e Forks com Git. Assim dando mais um passo ao trabalho colaborativo com Git.
+> Veja o post sobre como desfazer commits com git usando **git checkout, reset, e revert na linha de comando** clicando [aqui](https://sup3r-us3r.github.io/06/07/2018/git-desfazendo-commits)
 
 <br/><br/>
 
