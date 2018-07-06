@@ -20,6 +20,7 @@ git config --global user.name "Meu.Usuário"
 git config --global user.email "meu.email@gmail.com"
 
 ```
+
 > Substitua com seu Usuário e E-mail da sua conta no GitHub.
 
 <br/><br/>
@@ -32,6 +33,7 @@ git config --global user.email "meu.email@gmail.com"
 git init
 
 ```
+
 > No meu exemplo a pasta se chama  **Tutorial**
 
 <br/><br/>
