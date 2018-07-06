@@ -40,10 +40,12 @@ git init
 ```
 Meu repositório Git.
 ```
-> Salve o arquivo e agora você irá usar o comando mais usado em Git:
+
+> Salve o arquivo, e agora você irá usar o comando mais usado em Git:
 ```
 git status
 ```
+
 > O resultado deve ser:
 ```
 On branch master
@@ -57,14 +59,17 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
+
 > O comando  <code>git status</code>  sempre vai retornar o estado atual do repositório e explicar o que você pode fazer em seguida. Neste caso não há commits criados ainda então você pode criar o primeiro com o arquivo  <code>README.md</code> . Devemos primeiro adicionar o arquivo a um commit com o comando:
 ```
 git add README.md
 ```
+
 > Agora o arquivo está pronto para ser empacotado em um commit. Escreva o comando de commit incluindo uma mensagem que explique o que sua alteração faz no repositório.
 ```
 git commit -m "Adiciona arquivo README.md"
 ```
+
 > Pronto, você fez o primeiro commit. Pode listar os commits mais recentes com o comando:
 ```
 git log
@@ -78,17 +83,15 @@ git log
 
 > Crie o repositório com o nome que desejar, neste exemplo vou usar  **Tutorial**. Após criado, o repositório já exibirá os comandos necessários para iniciar e configurar o seu repositório localmente. Como já criamos o repositório localmente e queremos subí-lo no GitHub seguiremos com a opção  _“push an existing repository from the command line”_. Primeiro devemos configurar qual o repositório remoto. Execute usando a URL do seu repositório:
 ```
-
 git remote add origin https://github.com/Sup3r-Us3r/Tutorial.git
-
-```
-> Com isso você configurou o remote  <code>origin</code>  para o GitHub. Você já pode subir seus commits para lá usando <code>git push</code>, mas na primeira vez o comando deve ser executado para configurar a branch  <code>master</code>  para o GitHub. Opa, logo falarei sobre branchs em outro post. Ao executar o comando será solicitado o usuário e senha para autenticar no GitHub.
 ```
 
+> Com isso você configurou o remote <code>origin</code> para o GitHub. Você já pode subir seus commits para lá usando <code>git push</code>, mas na primeira vez o comando deve ser executado para configurar a branch  <code>master</code>  para o GitHub. Opa, logo falarei sobre branchs em outro post. Ao executar o comando será solicitado o usuário e senha para autenticar no GitHub.
+```
 git push -u origin master
-
 ```
-> Olhe o repositório no GitHub e verá seu arquivo  **README.md**  lá e exibido na página inicial do repositório. Pronto, você aprendeu os principais comandos para se trabalhar com Git. Git é uma ótima ferramenta para se trabalhar em equipe também mas apenas estes comandos não são suficientes.
+
+> Olhe o repositório no GitHub, e verá seu arquivo  **README.md**,  lá é exibido na página inicial do repositório. Pronto, você aprendeu os principais comandos para se trabalhar com Git. Git é uma ótima ferramenta para se trabalhar em equipe também mas apenas estes comandos não são suficientes.
 
 <br/><br/>
 
@@ -98,24 +101,21 @@ git push -u origin master
 
 > Agora o repositório possui dois commits no GitHub e no seu computador apenas um. Para sincronizar o seu repositório você deve puxar as atualizações.
 ```
-
 git pull
-
 ```
+
 > Você verá que seu repositório local foi atualizado com o novo commit.
 
 <br/><br/>
 
 ### Baixe outros repositórios
 
-Você pode querer baixar um repositório Git no seu computador e começar a commitar nele. Para isso existe o  <code>git clone</code> que basicamente faz o download do repositório, seus arquivos, commits e configuração de remotes. Você pode clonar qualquer repositório público no GitHub e outros servidores Git. Você precisa da URL Git desses repositórios, você pode obtê-la no botão **Clone or download**.
-
+> Você pode querer baixar um repositório Git no seu computador e começar a commitar nele. Para isso existe o  <code>git clone</code> que basicamente faz o download do repositório, seus arquivos, commits e configuração de remotes. Você pode clonar qualquer repositório público no GitHub e outros servidores Git. Você precisa da URL Git desses repositórios, você pode obtê-la no botão **Clone or download**.
 ```
-
 git clone https://github.com/Sup3r-Us3r/Tutorial.git
-
 ```
-O comando irá criar a pasta  **Tutorial**  com o repositório.
+
+> O comando irá criar a pasta  **Tutorial** com o repositório.
 
 <br/><br/>
 
