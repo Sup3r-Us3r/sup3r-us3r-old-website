@@ -23,8 +23,5 @@ Esse post é voltado somente para demonstração de todas as características qu
  </ul>
  
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.dropdown-trigger');
-    var instances = M.Dropdown.init(elems, options);
-  });
+  $('.dropdown-trigger').dropdown();
 </script>
