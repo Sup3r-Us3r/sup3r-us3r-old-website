@@ -10,7 +10,7 @@ Esse post é voltado somente para demonstração de todas as características qu
 
 
  <!-- Dropdown Trigger -->
- <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
+ <a class='dropdown-button btn' data-belloworigin="true" href='#' data-activates='dropdown1'>Drop Me!</a>
 
  <!-- Dropdown Structure -->
  <ul id='dropdown1' class='dropdown-content'>
@@ -23,5 +23,5 @@ Esse post é voltado somente para demonstração de todas as características qu
  </ul>
  
 <script>
-  $('.dropdown-trigger').dropdown();
+$('.dropdown-button').dropdown();
 </script>
