@@ -10,7 +10,7 @@ Esse post é voltado somente para demonstração de todas as características qu
 
 
  <!-- Dropdown Trigger -->
- <a class='dropdown-button btn' covertrigger="true" href='#' data-activates='dropdown1'>Drop Me!</a>
+ <a class='dropdown-button btn' covertrigger="false" href='#' data-activates='dropdown1'>Drop Me!</a>
 
  <!-- Dropdown Structure -->
  <ul id='dropdown1' class='dropdown-content'>
