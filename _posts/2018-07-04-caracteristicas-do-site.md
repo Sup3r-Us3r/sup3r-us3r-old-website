@@ -8,6 +8,8 @@ tags: site caracteristicas
 
 Esse post é voltado somente para demonstração de todas as características que este website possui.
 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
 
 <!-- Section: Contact -->
  <section id="contact" class="section section-contact scrollspy">
@@ -117,19 +119,19 @@ Esse post é voltado somente para demonstração de todas as características qu
       <div class="col s12">
         <h4>Follow Travelville</h4>
         <p>Follow us on social media for special offers</p>
-        <a href="htttps://facebook.com" target="_blank" class="white-text">
+        <a href="https://facebook.com" target="_blank" class="white-text">
           <i class="fab fa-facebook fa-4x"></i>
         </a>
-        <a href="htttps://twitter.com" target="_blank" class="white-text">
+        <a href="https://twitter.com" target="_blank" class="white-text">
           <i class="fab fa-twitter fa-4x"></i>
         </a>
-        <a href="htttps://linkedin.com" target="_blank" class="white-text">
+        <a href="https://linkedin.com" target="_blank" class="white-text">
           <i class="fab fa-linkedin fa-4x"></i>
         </a>
-        <a href="htttps://googleplus.com" target="_blank" class="white-text">
+        <a href="https://googleplus.com" target="_blank" class="white-text">
           <i class="fab fa-google-plus fa-4x"></i>
         </a>
-        <a href="htttps://pinterest.com" target="_blank" class="white-text">
+        <a href="https://pinterest.com" target="_blank" class="white-text">
           <i class="fab fa-pinterest fa-4x"></i>
         </a>
       </div>
