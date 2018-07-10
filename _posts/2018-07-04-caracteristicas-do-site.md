@@ -8,28 +8,27 @@ tags: site caracteristicas
 
 Esse post é voltado somente para demonstração de todas as características que este website possui.
 
-<div class="fixed-action-btn">
- <!-- Element Showed -->
- <a id="menu" class="waves-effect waves-light btn-large btn-floating" ><i class="material-icons">menu</i></a>
-</div>
+ <a class="waves-effect waves-light btn" onclick="$('.tap-target').tapTarget('open')">Open tap target</a>&nbsp;&nbsp;&nbsp;&nbsp;
+ <a class="waves-effect waves-light btn" onclick="$('.tap-target').tapTarget('close')">Close tap target</a>
+ <br>
+ <br>
 
-<!-- Tap Target Structure -->
-<div class="tap-target red white-text" data-activates="menu">
-  <div class="tap-target-content">
-    <h5>Por favor</h5>
-    <p>A bunch of text</p>
-  </div>
-</div>
+ <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+   <a id="menu" class="btn btn-floating btn-large cyan">
+     <i class="material-icons">menu</i>
+   </a>
+ </div>
 
-<a class="btn" id="abrir">Abrir</a>
-<a class="btn" id="fechar">Fechar</a>
-
-<script>
-$("#abrir").click(function(){
- $('.tap-target').tapTarget('open');
-});
+ <div class="tap-target cyan" data-target="menu">
+   <div class="tap-target-content white-text">
+     <h5>I am here</h5>
+     <p class="white-text">Provide value and encourage return visits by introducing users to new features and functionality at contextually
+       relevant moments.</p>
+   </div>
+ </div>
  
-$("#fechar").click(function(){
- $('.tap-target').tapTarget('close');
-});
-</script>
+ <script>
+   $(document).ready(function(){
+    $('.tap-target').tapTarget();
+  });
+ </script>
