@@ -14,9 +14,9 @@ Esse post é voltado somente para demonstração de todas as características qu
 </div>
 
 <!-- Tap Target Structure -->
-<div class="tap-target red white-text" data-target="menu">
+<div class="tap-target red white-text" data-activates="menu">
   <div class="tap-target-content">
-    <h5>Title</h5>
+    <h5>Por favor</h5>
     <p>A bunch of text</p>
   </div>
 </div>
