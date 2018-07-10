@@ -9,42 +9,20 @@ tags: site caracteristicas
 Esse post é voltado somente para demonstração de todas as características que este website possui.
 
 
-  <div class="slider">
-    <ul class="slides">
-      <li>
-        <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
-        <div class="caption left-align">
-          <h3>Left Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
-        <div class="caption right-align">
-          <h3>Right Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-    </ul>
-  </div>
+ <!-- Dropdown Trigger -->
+ <a class='dropdown-button btn' covertrigger="true" href='#' data-activates='dropdown1'>Drop Me!</a>
+
+ <!-- Dropdown Structure -->
+ <ul id='dropdown1' class='dropdown-content'>
+   <li><a href="#!">one</a></li>
+   <li><a href="#!">two</a></li>
+   <li class="divider" tabindex="-1"></li>
+   <li><a href="#!">three</a></li>
+   <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+   <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+ </ul>
 
 <script>
-  $(document).ready(function(){
-    $('.slider').slider();
-  });
+$('.dropdown-button').dropdown();
 </script>
 
