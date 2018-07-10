@@ -8,19 +8,70 @@ tags: site caracteristicas
 
 Esse post é voltado somente para demonstração de todas as características que este website possui.
 
- <!-- Dropdown Trigger -->
- <a class='dropdown-button btn' data-belloworigin="true" href='#' data-activates='dropdown1'>Drop Me!</a>
+<div class="input-field col s12">
+  <select>
+    <option value="" disabled selected>Choose your option</option>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+  <label>Materialize Select</label>
+</div>
 
- <!-- Dropdown Structure -->
- <ul id='dropdown1' class='dropdown-content'>
-   <li><a href="#!">one</a></li>
-   <li><a href="#!">two</a></li>
-   <li class="divider" tabindex="-1"></li>
-   <li><a href="#!">three</a></li>
-   <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-   <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
- </ul>
+<div class="input-field col s12">
+  <select multiple>
+    <option value="" disabled selected>Choose your option</option>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+  <label>Materialize Multiple Select</label>
+</div>
+
+<div class="input-field col s12">
+  <select>
+    <optgroup label="team 1">
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+    </optgroup>
+    <optgroup label="team 2">
+      <option value="3">Option 3</option>
+      <option value="4">Option 4</option>
+    </optgroup>
+  </select>
+  <label>Optgroups</label>
+</div>
+
+<div class="input-field col s12 m6">
+  <select class="icons">
+    <option value="" disabled selected>Choose your option</option>
+    <option value="" data-icon="images/sample-1.jpg">example 1</option>
+    <option value="" data-icon="images/office.jpg">example 2</option>
+    <option value="" data-icon="images/yuna.jpg">example 3</option>
+  </select>
+  <label>Images in select</label>
+</div>
+<div class="input-field col s12 m6">
+  <select class="icons">
+    <option value="" disabled selected>Choose your option</option>
+    <option value="" data-icon="images/sample-1.jpg" class="left">example 1</option>
+    <option value="" data-icon="images/office.jpg" class="left">example 2</option>
+    <option value="" data-icon="images/yuna.jpg" class="left">example 3</option>
+  </select>
+  <label>Images in select</label>
+</div>
+
+<label>Browser Select</label>
+<select class="browser-default">
+  <option value="" disabled selected>Choose your option</option>
+  <option value="1">Option 1</option>
+  <option value="2">Option 2</option>
+  <option value="3">Option 3</option>
+</select>
+
 
 <script>
-$('.dropdown-button').dropdown();
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
 </script>
