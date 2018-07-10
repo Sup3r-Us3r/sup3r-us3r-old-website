@@ -9,23 +9,19 @@ tags: site caracteristicas
 Esse post é voltado somente para demonstração de todas as características que este website possui.
 
 
-<div class="input-field col s12 m6">
-  <select class="icons">
-    <option value="" disabled selected>Choose your option</option>
-    <option value="1" data-icon="https://www.linknacional.com.br/wp-content/uploads/2018/04/linux.jpg">example 1</option>
-    <option value="2" data-icon="https://www.linknacional.com.br/wp-content/uploads/2018/04/linux.jpg">example 2</option>
-    <option value="3" data-icon="https://www.linknacional.com.br/wp-content/uploads/2018/04/linux.jpg">example 3</option>
-  </select>
-  <label>Images in select</label>
-</div>
-<div class="input-field col s12 m6">
-  <select class="icons">
-    <option value="" disabled selected>Choose your option</option>
-    <option value="1" data-icon="https://www.linknacional.com.br/wp-content/uploads/2018/04/linux.jpg" class="left">example 1</option>
-    <option value="2" data-icon="https://www.linknacional.com.br/wp-content/uploads/2018/04/linux.jpg" class="left">example 2</option>
-    <option value="3" data-icon="https://www.linknacional.com.br/wp-content/uploads/2018/04/linux.jpg" class="left">example 3</option>
-  </select>
-  <label>Images in select</label>
+<div class="row">
+  <form class="col s12">
+
+  <div class="input-field col s12">
+  	<select>
+  		<option value="" disabled selected>Selecione um valor</option>
+  		<option value="1">Opção 1</option>
+  		<option value="2">Opção 2</option>
+  		<option value="3">Opção 3</option>
+  	</select>
+  </div>
+  
+  </form>
 </div>
 
 
