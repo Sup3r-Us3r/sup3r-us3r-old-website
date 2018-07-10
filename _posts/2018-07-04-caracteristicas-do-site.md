@@ -9,53 +9,42 @@ tags: site caracteristicas
 Esse post é voltado somente para demonstração de todas as características que este website possui.
 
 
-<div class="carousel">
-  <a class="carousel-item" href="#one!"><img src="https://s5.favim.com/orig/54/bubble-bubbles-clouds-colours-Favim.com-522009.jpg" height="200"></a>
-  <a class="carousel-item" href="#two!"><img src="https://s5.favim.com/orig/54/bubble-bubbles-clouds-colours-Favim.com-522009.jpg" height="200"></a>
-  <a class="carousel-item" href="#three!"><img src="https://s5.favim.com/orig/54/bubble-bubbles-clouds-colours-Favim.com-522009.jpg" height="200"></a>
-  <a class="carousel-item" href="#four!"><img src="https://s5.favim.com/orig/54/bubble-bubbles-clouds-colours-Favim.com-522009.jpg" height="200"></a>
-  <a class="carousel-item" href="#five!"><img src="https://s5.favim.com/orig/54/bubble-bubbles-clouds-colours-Favim.com-522009.jpg" height="200"></a>
-</div>
-
-<div class="carousel carousel-slider">
-  <a class="carousel-item" href="#one!"><img src="https://s5.favim.com/orig/54/bubble-bubbles-clouds-colours-Favim.com-522009.jpg" height="200"></a>
-  <a class="carousel-item" href="#two!"><img src="https://s5.favim.com/orig/54/bubble-bubbles-clouds-colours-Favim.com-522009.jpg" height="200"></a>
-  <a class="carousel-item" href="#three!"><img src="https://s5.favim.com/orig/54/bubble-bubbles-clouds-colours-Favim.com-522009.jpg" height="200"></a>
-  <a class="carousel-item" href="#four!"><img src="https://s5.favim.com/orig/54/bubble-bubbles-clouds-colours-Favim.com-522009.jpg" height="200"></a>
-  <a class="carousel-item" href="#five!"><img src="https://s5.favim.com/orig/54/bubble-bubbles-clouds-colours-Favim.com-522009.jpg" height="200"></a>
-</div>
-
-<div class="carousel carousel-slider center">
-  <div class="carousel-fixed-item center">
-    <a class="btn waves-effect white grey-text darken-text-2">Ver</a>
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
   </div>
-  <div class="carousel-item red white-text" href="#one!">
-    <h2>First Panel</h2>
-    <p class="white-text">This is your first panel</p>
-  </div>
-  <div class="carousel-item amber white-text" href="#two!">
-    <h2>Second Panel</h2>
-    <p class="white-text">This is your second panel</p>
-  </div>
-  <div class="carousel-item green white-text" href="#three!">
-    <h2>Third Panel</h2>
-    <p class="white-text">This is your third panel</p>
-  </div>
-  <div class="carousel-item blue white-text" href="#four!">
-    <h2>Fourth Panel</h2>
-    <p class="white-text">This is your fourth panel</p>
-  </div>
-</div>
 
 <script>
-   $(document).ready(function(){
-    $('.carousel').carousel();
-  });
-  
-    $('.carousel.carousel-slider').carousel({
-    fullWidth: true,
-    indicators: true,
-    duration: 100
+  $(document).ready(function(){
+    $('.slider').slider();
   });
 </script>
 
