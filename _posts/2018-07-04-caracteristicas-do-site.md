@@ -27,6 +27,6 @@ Esse post é voltado somente para demonstração de todas as características qu
 
 <script>
   $(document).ready(function(){
-    $('select').formSelect();
+    $('select').material_select();
   });
 </script>
