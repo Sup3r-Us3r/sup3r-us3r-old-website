@@ -9,22 +9,19 @@ tags: site caracteristicas
 Esse post é voltado somente para demonstração de todas as características que este website possui.
 
 
-<a href="#teste" class="btn modal-trigger"> Abrir modal </a>
-<div class="modal" id="teste">
- <div class="modal-content">
-  <h4 class="light"> Teste </h4>
-  <p> O hábito da leitura é um dos mais importantes para o desenvolvimento do intelecto e também o caminho mais curto para adquirir conhecimento. Em meio ao boom tecnológico das últimas décadas, esse hábito acabou ficando de lado, sendo substituído primeiro pela televisão, depois pelos computadores, pelos videogames e agora pelos smartphones.
-  </p>
- </div>
- 
- <div class="modal-footer">
-  <a class="btn">Sair</a>
- </div>
-</div>
+ <!-- Dropdown Trigger -->
+ <a class='dropdown-button btn' data-belloworigin="true" href='#' data-activates='dropdown1'>Drop Me!</a>
 
+ <!-- Dropdown Structure -->
+ <ul id='dropdown1' class='dropdown-content'>
+   <li><a href="#!">one</a></li>
+   <li><a href="#!">two</a></li>
+   <li class="divider" tabindex="-1"></li>
+   <li><a href="#!">three</a></li>
+   <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+   <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+ </ul>
 
 <script>
-$(document).ready(function(){
- $('.modal').modal();
-});
+$('.dropdown-button').dropdown();
 </script>
