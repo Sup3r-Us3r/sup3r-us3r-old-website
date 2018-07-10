@@ -12,18 +12,18 @@ Esse post é voltado somente para demonstração de todas as características qu
 <div class="input-field col s12 m6">
   <select class="icons">
     <option value="" disabled selected>Choose your option</option>
-    <option value="" data-icon="https://www.linknacional.com.br/wp-content/uploads/2018/04/linux.jpg">example 1</option>
-    <option value="" data-icon="https://www.linknacional.com.br/wp-content/uploads/2018/04/linux.jpg">example 2</option>
-    <option value="" data-icon="https://www.linknacional.com.br/wp-content/uploads/2018/04/linux.jpg">example 3</option>
+    <option value="1" data-icon="https://www.linknacional.com.br/wp-content/uploads/2018/04/linux.jpg">example 1</option>
+    <option value="2" data-icon="https://www.linknacional.com.br/wp-content/uploads/2018/04/linux.jpg">example 2</option>
+    <option value="3" data-icon="https://www.linknacional.com.br/wp-content/uploads/2018/04/linux.jpg">example 3</option>
   </select>
   <label>Images in select</label>
 </div>
 <div class="input-field col s12 m6">
   <select class="icons">
     <option value="" disabled selected>Choose your option</option>
-    <option value="" data-icon="https://www.linknacional.com.br/wp-content/uploads/2018/04/linux.jpg" class="left">example 1</option>
-    <option value="" data-icon="https://www.linknacional.com.br/wp-content/uploads/2018/04/linux.jpg" class="left">example 2</option>
-    <option value="" data-icon="https://www.linknacional.com.br/wp-content/uploads/2018/04/linux.jpg" class="left">example 3</option>
+    <option value="1" data-icon="https://www.linknacional.com.br/wp-content/uploads/2018/04/linux.jpg" class="left">example 1</option>
+    <option value="2" data-icon="https://www.linknacional.com.br/wp-content/uploads/2018/04/linux.jpg" class="left">example 2</option>
+    <option value="3" data-icon="https://www.linknacional.com.br/wp-content/uploads/2018/04/linux.jpg" class="left">example 3</option>
   </select>
   <label>Images in select</label>
 </div>
