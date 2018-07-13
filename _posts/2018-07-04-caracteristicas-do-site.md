@@ -244,23 +244,28 @@ Esse post é voltado somente para demonstração de todas as características qu
 
 
 
-<form method="POST" action="https://formspree.io/pc.gam3rs.tuto@gmail.com">
-    <div class="col s12 m6">
-        <div class="card-panel grey lighten-3">
-            <h5>ME ENVIE UM EMAIL</h5>
-            <div class="input-field">
-                <input type="text" placeholder="Nome" id="name">
-                <label for="name">Name</label>
-            </div>
-            <div class="input-field">
-                <input type="email" placeholder="Email" id="email">
-                <label for="email">Email</label>
-            </div>
-            <div class="input-field">
-                <textarea class="materialize-textarea" placeholder="Digite sua mensagem!" id="message"></textarea>
-                <label for="message">Mensagem</label>
-            </div>
-            <input type="submit" value="ENVIAR" class="btn">
+<!-- Contact -->
+<article id="contact">
+    <h2 class="major">Contato</h2>
+    <form method="post" action="https://formspree.io/pc.gam3rs.tuto@gmail.com">
+        <div class="field half first">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" />
         </div>
-    </div>
-</form>
+        <div class="field half">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" />
+        </div>
+        <div class="field">
+            <label for="message">Mesagem</label>
+            <textarea name="message" id="message" rows="4"></textarea>
+        </div>
+        <ul class="actions">
+            <li>
+                <input type="submit" value="Enviar Mensagem" class="special" />
+            </li>
+            <li>
+                <input type="reset" value="Resetar" />
+            </li>
+        </ul>
+    </form>
