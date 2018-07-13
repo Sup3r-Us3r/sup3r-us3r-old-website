@@ -258,14 +258,14 @@ Esse post é voltado somente para demonstração de todas as características qu
         </div>
         <div class="field">
             <label for="message">Mesagem</label>
-            <textarea name="message" id="message" rows="4"></textarea>
+            <textarea class="materialize-textarea" name="Digite sua mensagem!" id="message"></textarea>
         </div>
         <ul class="actions">
             <li>
-                <input type="submit" value="Enviar Mensagem" class="special" />
+                <input type="submit" value="ENVIAR" class="btn" />
             </li>
             <li>
-                <input type="reset" value="Resetar" />
+                <input type="reset" value="RESETAR" class="btn">
             </li>
         </ul>
     </form>
