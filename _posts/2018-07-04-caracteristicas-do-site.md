@@ -262,7 +262,6 @@ Esse post é voltado somente para demonstração de todas as características qu
         </div>
         <ul class="actions" align="center">
             <br/>
-                <input type="submit" value="ENVIAR" class="btn" />
-                <input type="reset" value="RESETAR" class="btn">
+                <input type="submit" class="btn-floating btn-large cyan pulse"><i class="material-icons">send</i>
         </ul>
     </form>
