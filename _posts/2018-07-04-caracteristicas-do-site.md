@@ -261,7 +261,7 @@ Esse post é voltado somente para demonstração de todas as características qu
             <textarea class="materialize-textarea" name="Digite sua mensagem!" id="message"></textarea>
         </div>
         <ul class="actions" align="center">
-            <hr>
+            <br/>
                 <input type="submit" value="ENVIAR" class="btn" />
                 <input type="reset" value="RESETAR" class="btn">
         </ul>
