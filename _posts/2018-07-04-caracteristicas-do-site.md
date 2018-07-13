@@ -260,10 +260,9 @@ Esse post é voltado somente para demonstração de todas as características qu
             <label for="message">Mesagem</label>
             <textarea class="materialize-textarea" name="Digite sua mensagem!" id="message"></textarea>
         </div>
-        <ul class="actions">
-            <li>
+        <ul class="actions" align="center">
+            <hr>
                 <input type="submit" value="ENVIAR" class="btn" />
                 <input type="reset" value="RESETAR" class="btn">
-            </li>
         </ul>
     </form>
