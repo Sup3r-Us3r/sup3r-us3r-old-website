@@ -263,8 +263,6 @@ Esse post é voltado somente para demonstração de todas as características qu
         <ul class="actions">
             <li>
                 <input type="submit" value="ENVIAR" class="btn" />
-            </li>
-            <li>
                 <input type="reset" value="RESETAR" class="btn">
             </li>
         </ul>
