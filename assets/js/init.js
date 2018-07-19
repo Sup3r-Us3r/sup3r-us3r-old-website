@@ -1,6 +1,7 @@
 (function($){
   $(function(){
 
+    $(".dropdown-button").dropdown();
     $('.modal').modal();
     $('.sidenav').sidenav();
     $('.parallax').parallax();
