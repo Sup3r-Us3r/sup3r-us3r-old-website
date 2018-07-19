@@ -1,11 +1,5 @@
-(function($){
-  $(function(){
-
-    $('.dropdown-trigger').dropdown();
-    $(".dropdown-button").dropdown();
-    $('.modal').modal();
-    $('.sidenav').sidenav();
-    $('.parallax').parallax();
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+$('.dropdown-button').dropdown({
+	constrainWidth: true, // This should be calculated like `activates.css('width', origin.parent().outerWidth())` in https://github.com/Dogfalo/materialize/blob/master/js/dropdown.js:89
+	alignment: 'right',
+	hover: true
+});
