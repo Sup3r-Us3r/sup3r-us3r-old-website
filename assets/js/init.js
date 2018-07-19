@@ -1,5 +1,4 @@
-$('.dropdown-button').dropdown({
-	constrainWidth: true, // This should be calculated like `activates.css('width', origin.parent().outerWidth())` in https://github.com/Dogfalo/materialize/blob/master/js/dropdown.js:89
-	alignment: 'right',
-	hover: true
+$(document).ready(function(){
+  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  $('.modal-trigger').leanModal();
 });
