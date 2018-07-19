@@ -1,6 +1,7 @@
 (function($){
   $(function(){
 
+    $('.dropdown-trigger').dropdown();
     $(".dropdown-button").dropdown();
     $('.modal').modal();
     $('.sidenav').sidenav();
