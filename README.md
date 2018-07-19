@@ -35,7 +35,7 @@
 
 <p align="center">
   <a href="https://pag.ae/bkzYxDJ" target="_blank">
-  <img class="hoverable z-depth-1" src="https://img.shields.io/badge/DOAR%20COM-PAGSEGURO-green.svg?style=for-the-badge">
+  <img class="hoverable z-depth-1" src="https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/205x30-doar.gif">
 </p>
 
 <!--
