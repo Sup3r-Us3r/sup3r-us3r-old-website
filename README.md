@@ -22,6 +22,22 @@
   <a href="https://www.twitter.com/Magn0tutor" target="_blank"><img src="https://img.shields.io/badge/TWITTER-ME%20SIGA-lightgrey.svg?style=for-the-badge"></a>
 </p>
 
+<hr>
+
+<h3>
+	<p align="center">
+	<b>FAÇA UMA DOAÇÃO</b>
+	<br>
+	<b>:moneybag: ME AJUDE PARA SER AJUDADO</b>
+	</p>
+
+</h3>
+
+<p align="center">
+  <a href="https://pag.ae/bkzYxDJ" target="_blank">
+  <img class="hoverable z-depth-1" src="https://img.shields.io/badge/DOAR%20COM-PAGSEGURO-green.svg?style=for-the-badge">
+</p>
+
 <!--
 ![forthebadge](http://forthebadge.com/images/badges/made-with-ruby.svg)
 ![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)
