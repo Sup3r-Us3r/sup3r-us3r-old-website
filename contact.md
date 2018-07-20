@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Contatos"
+title: "Contato"
 ---
 
 <form action="https://docs.google.com/forms/d/e/1FAIpQLSdlqWBRTnC3eGgPKVBQ01h5BqIC1dGHNRPTLWUlz-7BFjXptw/formResponse" method="post">
