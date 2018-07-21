@@ -26,7 +26,7 @@ title: "Contato"
     </div>
     <div class="row center">
         <button class="btn waves-effect waves-light" type="submit" name="submit">ENVIAR<i class="material-icons right">send</i></button>
-        <button class="btn waves-effect waves-light" type="reset" name="reset">RESETAR<i class="material-icons right">subject</i></button>
+        <button class="btn waves-effect waves-light" type="reset" name="reset">LIMPAR<i class="material-icons right">subject</i></button>
     </div>
 </form>
 
