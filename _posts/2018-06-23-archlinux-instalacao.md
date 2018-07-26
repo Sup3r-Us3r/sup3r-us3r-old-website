@@ -96,7 +96,7 @@ Uma das maiores vantagens da distribuição Arch Linux é a sua simplicidade na 
 
 > Particionar Disco **(BIOS)**
 
-![bios](https://raw.githubusercontent.com/Sup3r-Us3r/Arch-Install/master/Particionamento%20de%20Disco/parti%C3%A7%C3%B5es%20bios.gif)
+<img class="responsive-img" src="https://raw.githubusercontent.com/Sup3r-Us3r/Arch-Install/master/Particionamento%20de%20Disco/parti%C3%A7%C3%B5es%20bios.gif">
 
 > Aconselha-se dar
 > * /swap = 4gb
@@ -117,7 +117,7 @@ Uma das maiores vantagens da distribuição Arch Linux é a sua simplicidade na 
 
 > 🔶 Particionar Disco **(UEFI)**
 
-![uefi](https://raw.githubusercontent.com/Sup3r-Us3r/Arch-Install/master/Particionamento%20de%20Disco/parti%C3%A7%C3%B5es%20uefi.gif)
+<img class="responsive-img" src="https://raw.githubusercontent.com/Sup3r-Us3r/Arch-Install/master/Particionamento%20de%20Disco/parti%C3%A7%C3%B5es%20uefi.gif">
 
 > Aconselha-se dar
 > * /boot = 300mb
