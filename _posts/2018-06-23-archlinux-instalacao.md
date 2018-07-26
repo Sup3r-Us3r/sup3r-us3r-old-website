@@ -29,13 +29,25 @@ Uma das maiores vantagens da distribuição Arch Linux é a sua simplicidade na 
 
 <br/>
 
-#### FAÇA O DOWNLOAD DO ARCH LINUX: [BAIXAR](https://www.archlinux.org/download/)
-<br/>
-
-| USB BOOTABLE | DOWNLOAD | VIA COMANDO DD LINUX |
-|--|--|--|
-| LINUX | [Etcher](https://etcher.io) - [RosaImageWriter](http://wiki.rosalab.com/en/index.php/ROSA_ImageWriter) | dd bs=4M if=/lugar_onde_esta_sua_iso of=/dev/sdX status=progress && sync |
-| WINDOWS | [Rufus](https://rufus.akeo.ie) - [Win32DiskImager](https://sourceforge.net/projects/win32diskimager) |
+<!-- Menu de escolha -->
+<ul class="collapsible">
+  <li>
+    <div class="collapsible-header"><i class="material-icons">arrow_downward</i>FAÇA O DOWNLOAD DO ARCH LINUX</div>
+    <div class="collapsible-body"><span>Baixe a <a href="https://www.archlinux.org/download" target="_blank">.iso</a> do Arch Linux</span></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons">usb</i>USB BOOTABLE WINDOWS</div>
+    <div class="collapsible-body"><span>Aqui estão duas ótimas opções para gravar a imagem .iso no Windows <a href="https://rufus.akeo.ie" target="_blank">Rufus</a> - <a href="https://sourceforge.net/projects/win32diskimager" target="_blank">Win32DiskImager</a></span></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons">usb</i>USB BOOTABLE LINUX</div>
+    <div class="collapsible-body"><span>Aqui estão duas ótimas opções para gravar a imagem .iso no Linux <a href="https://etcher.io/" target="_blank">Etcher</a> - <a href="http://wiki.rosalab.com/en/index.php/ROSA_ImageWriter" target="_blank">RosaImageWriter</a></span></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons">album</i>GRAVAR A .ISO VIA COMANDO DD "LINUX"</div>
+    <div class="collapsible-body"><span>dd bs=4M if=/lugar_onde_esta_sua_iso of=/dev/sdX status=progress && sync</span></div>
+  </li>
+</ul>
 
 **(Substitua o X pela letra do seu dispositivo ex: "sdc, sdd") use: lsblk**
 
@@ -546,18 +558,57 @@ Existem outras alternativas como: **Gdm**, **Sddm** etc.
 ### APLICATIVOS RECOMENDADOS
 ##### Recomendações finais.
 
-| Descrição                 | Packages                                       |
-| ----------                | --------                                       |
-| Terminal                  | <u>termite</u>                                 |
-| Compositor                | <u>compton</u>                                 |
-| Gerenciador de Arquivos   | <u>nautilus</u>  -  <u>thunar</u>              |
-| Editor de Texto           | <u>leafpad</u>                                 |
-| Fonte                     | <u>ttf-fantasque-sans-mono</u>                 |
-| Tema GTK                  | <u>numix-gtk-theme</u>                         |
-| Navegador                 | <u>google-chrome-stable</u>  -  <u>firefox</u> |
-| Música                    | <u>audacious</u>                               |
-| Vídeo                     | <u>vlc</u>                                     |
-| IDE                       | <u>visual-studio-code</u>                      |
+<!-- Tabela -->
+<table class="striped">
+  <thead>
+    <tr>
+        <th>DESCRIÇÃO</th>
+        <th>PACKAGES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Terminal</td>
+      <td>termite</td>
+    </tr>
+    <tr>
+      <td>Compositor</td>
+      <td>compton</td>
+    </tr>
+    <tr>
+      <td>Gerenciador de Arquivos</td>
+      <td>nautilus - thunar</td>
+    </tr>
+    <tr>
+      <td>Editor de Texto</td>
+      <td>leafpad</td>
+    </tr>
+    <tr>
+      <td>Fonte</td>
+      <td>ttf-fantasque-sans-mono</td>
+    </tr>
+    <tr>
+      <td>Tema GTK</td>
+      <td>numix-gtk-theme</td>
+    </tr>
+    <tr>
+      <td>Navegador</td>
+      <td>google-chrome-stable - firefox</td>
+    </tr>
+    <tr>
+      <td>Música</td>
+      <td>audacious</td>
+    </tr>
+    <tr>
+      <td>Vídeo</td>
+      <td>vlc</td>
+    </tr>
+    <tr>
+      <td>IDE</td>
+      <td>visual-studio-code</td>
+    </tr>
+  </tbody>
+</table>
 
 <br/><br/>
 
