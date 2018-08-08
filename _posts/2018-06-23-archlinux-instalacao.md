@@ -334,11 +334,11 @@ Se tudo estiver OK você deve ver o root montado.
 ### CRIAR USUÁRIO
 > useradd -m -g [initial_group] -G [additional_groups] -s [login_shell] [username]
 ```
-# useradd -m -g users -G wheel,storage,power -s /bin/bash ghost
+# useradd -m -g users -G wheel,storage,power -s /bin/bash username
 ```
 > Em seguida, forneça a senha para este novo usuário executando:
 ```
-# passwd ghost
+# passwd username
 ```
 > Não se esqueça de definir também a senha para o usuário **root**:
 ```
@@ -549,7 +549,7 @@ Existem outras alternativas como: **Gdm**, **Sddm** etc.
 
 <br/><br/>
 
-### GERENCIADORE PARA AUR
+### GERENCIADOR PARA AUR
 > Alguns pacotes não podem ser encontrados no repositório principal, por isso temos o AUR onde possamos encontra-los e instalá-los, e para fazer isto precisamos instalar um programa que vai nos ajudar com os pacotes do AUR, um dos mais conhecidos era o Yaourt, mas infelizmente ele foi descontinuado, mas não se preocupe, existem outros que faz o mesmo trabalho e muito bem, hoje vou te ensinar a instalar o **yay** ele possui parâmetros similar ao próprio pacman, que vai te fazer ter uma interação bem tranquila com o programa.
 ```
 # pacman -S git
