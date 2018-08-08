@@ -177,6 +177,9 @@ Partition number: Enter
 First sector: Enter
 Last sector: Enter
 Hex Code or GUID: 8300
+
+Command (? for help): w
+Do you want to proceed? (Y/N): Y
 ```
 
 <br/><br/>
@@ -546,17 +549,34 @@ Existem outras alternativas como: **Gdm**, **Sddm** etc.
 
 <br/><br/>
 
-### YAOURT
-> Alguns pacotes não podem ser encontrados no repositório principal, por isso temos o AUR onde possamos encontra-los e instalá-los, e para fazer isto precisamos adicionar o endereço AUR no final do arquivo /etc/pacman.conf.
+### GERENCIADORE PARA AUR
+> Alguns pacotes não podem ser encontrados no repositório principal, por isso temos o AUR onde possamos encontra-los e instalá-los, e para fazer isto precisamos instalar um programa que vai nos ajudar com os pacotes do AUR, um dos mais conhecidos era o Yaourt, mas infelizmente ele foi descontinuado, mas não se preocupe, existem outros que faz o mesmo trabalho e muito bem, hoje vou te ensinar a instalar o **yay** ele possui parâmetros similar ao próprio pacman, que vai te fazer ter uma interação bem tranquila com o programa.
 ```
-# echo -e "[archlinuxfr]\nSigLevel = Never\nServer=http://repo.archlinux.fr/\$arch" >> /etc/pacman.conf
-# pacman -Sy yaourt
+# pacman -S git
+$ git clone https://aur.archlinux.org/yay.git
+$ cd yay
+$ makepkg -si
+```
+> Pesquisar por algum pacote no AUR
+```
+$ yay pacote
+```
+> Instalar algum pacote da AUR
+```
+$ yay -S pacote
+```
+> Atualizar os pacotes do AUR
+```
+$ yay -Syu
+```
+> Remover algum pacote
+```
+$ yay -R pacote
 ```
 
 <br/><br/>
 
 ### APLICATIVOS RECOMENDADOS
-##### Recomendações finais.
 
 <!-- Tabela -->
 <table class="striped">
