@@ -1,5 +1,3 @@
-(function($){
-  $(function(){
-    $(".button-collapse").sideNav();
-  });
-})(jQuery);
+$(document).ready(function(){
+  $('.sidenav').sidenav();
+});
