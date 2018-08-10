@@ -85,22 +85,23 @@ $ polybar -r mybar
 
 <br/>
 
-### INICIANDO A BARRA JUNTO COM A INTERFACE
+### INICIAR BARRA COM A INTERFACE
 Existem algumas formas de fazer isso, vou mostrar alguns exemplos.
 
 > Colocar a barra para iniciar no arquivo **~/.xinitrc**
+
 > obs: vai funcionar somente se a pessoa inicia sua interface através do "startx"
 ```
 $ echo "polybar -r mybar &" > ~/.xinitrc
 ```
 > Iniciando a barra no aquivo **~/.config/i3/config**
-> Basta adicionar o comando abaixo nesse arquivo de configuração do i3wm
+
 > obs: necessita usar o i3wm para realizar esse processo.
 ```
 exec polybar -r mybar
 ```
 > Iniciando a barra no aquivo **~/.config/bspwm/bspwmrc**
-> Basta adicionar o comando abaixo nesse arquivo de configuração do Bspwm
+
 > obs: necessita usar o Bspwm para realizar esse processo.
 ```
 polybar -r mybar
