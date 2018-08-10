@@ -1,5 +1,5 @@
-<script>
-$(document).ready(function(){
-  $('.sidenav').sidenav();
-});
-</script>
+(function($){
+  $(function(){
+    $(".button-collapse").sideNav();
+  });
+})(jQuery);
