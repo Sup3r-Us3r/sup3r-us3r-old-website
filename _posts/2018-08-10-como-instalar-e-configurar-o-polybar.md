@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Como instalar e configurar o Polybar"
-date:   2018-06-23 13:40:00 +0000
+date:   2018-08-10 14:38:00 +0000
 categories: Dicas
 tags: instalacao
 comments: 1
