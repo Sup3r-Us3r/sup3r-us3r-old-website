@@ -22,20 +22,22 @@ $ sudo apt-get install zsh
 ```
 ------
 
+<br/>
+
 <p align="center">
 <img class="responsive-img" src="https://ohmyz.sh/img/OMZLogo_BnW.png">
 </p>
 
 Oh my ZSH é um framework open-source dirigido pela comunidade, para gerenciar a configuração do ZSH (Terminal feito para uso interativo) e melhorar o workflow de desenvolvimento. Ele inclui mais de 200 plugins opcionais (rails, git, OSX, hub, capistrano, brew, ant, php, python, etc), e mais de 140 temas.
 
-#### Pré-requisitos
+#### PRÉ-REQUISITOS
 
-**Aviso**:  _Oh My Zsh funciona melhor no macOS e Linux._
+**Aviso**: Oh My Zsh funciona melhor no macOS e Linux.
 
 -   Sistema operacional baseado no Unix (macOS or Linux)
 -   ZSH instalado
--   `curl`  ou  `wget`  devem estar instalados
--   `git`  deve estar instalado
+-   curl ou wget devem estar instalados
+-   git deve estar instalado
 
 #### INSTALAR OH-MY-ZSH
 > Via curl
@@ -47,7 +49,7 @@ $ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools
 $ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 
-#### Temas
+#### TEMAS
 <p align="center">
 <img class="responsive-img" src="https://cloud.githubusercontent.com/assets/2618447/6316862/70f58fb6-ba03-11e4-82c9-c083bf9a6574.png">
 </p>
