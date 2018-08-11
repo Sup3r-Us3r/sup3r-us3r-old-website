@@ -129,9 +129,7 @@ Para poder personalizar a barra, e obter maiores informações é necessário e 
     <div class="row">
       <div class="col s12">
         <h4><b>NÃO ESQUEÇA DE COMPARTILHAR ESTE POST</b></h4>
-        <p>Ajude a divulgar nosso trabalho, é fácil e rápido!</p>
         <div class="sharethis-inline-share-buttons"></div>
-        </a>
       </div>
     </div>
   </div>
