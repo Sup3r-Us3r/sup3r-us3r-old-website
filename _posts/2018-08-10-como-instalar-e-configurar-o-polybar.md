@@ -38,7 +38,7 @@ O principal objetivo desta ferramenta é ajudar os usuários do Linux a criar ba
 <br/>
 
 ### INSTALAÇÃO
-Vamos instalar agora o polybar no Arch Linux, caso você use algum outro sistema, basta procurar por ele no seu gerenciador de pacotes da sua distribuição, ou se caso preferir você pode compilar o polybar através do [repositório oficial](https://github.com/jaagr/polybar)
+Vamos instalar agora o polybar no Arch Linux, caso você use algum outro sistema, basta procurar por ele no seu gerenciador de pacotes da sua distribuição, ou se caso preferir você pode compilar o polybar através do [repositório oficial](https://github.com/jaagr/polybar).
 
 > O Polybar se encontra no AUR do Arch Linux, então para isso vamos usar algum helper para instalar esse pacote, irei usar o **yay** mas existem outros como: **trizen, packer, pacaur** etc, caso você use outro basta substituir o **yay** por um da sua preferência.
 ```
@@ -89,7 +89,7 @@ $ polybar -r mybar
 Existem algumas formas de fazer isso, vou mostrar alguns exemplos:
 
 > Colocar a barra para iniciar no arquivo **~/.xinitrc**
-> obs: vai funcionar somente se a pessoa inicia sua interface através do "startx"
+> obs: vai funcionar somente se a pessoa inicia sua interface através do "startx".
 
 ```
 $ echo "polybar -r mybar &" > ~/.xinitrc
@@ -112,7 +112,7 @@ polybar -r mybar
 <br/>
 
 ### CONSIDERAÇÕES FINAIS
-Para poder personalizar a barra, e obter maiores informações é necessário e importante ler a [documentação oficial](https://github.com/jaagr/polybar/wiki), e para detalhes como dependências, e como obter o polybar para as demais distribuições você encontra na [página oficial.](https://github.com/jaagr/polybar)
+Para poder personalizar a barra, e obter maiores informações é necessário e importante ler a [documentação oficial](https://github.com/jaagr/polybar/wiki), e para detalhes como dependências, e como obter o polybar para as demais distribuições você encontra na [página oficial](https://github.com/jaagr/polybar).
 
 
 <br/><br/>
