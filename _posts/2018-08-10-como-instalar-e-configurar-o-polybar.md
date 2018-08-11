@@ -113,7 +113,7 @@ exec --no-startup-id polybar -r mybar
 > obs: necessita usar o Bspwm para realizar esse processo.
 
 ```
-polybar -r mybar
+polybar -r mybar &
 ```
 
 <br/>
