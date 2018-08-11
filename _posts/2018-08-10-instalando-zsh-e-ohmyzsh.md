@@ -63,7 +63,10 @@ $ nano ~/.zshrc
 ```
 ZSH_THEME="ys"
 ```
-Após editar o nome do tema, basta salvar o arquivo.
+Após editar o nome do tema, basta salvar o arquivo e rodar esse comando para atualizar
+```
+$ source ~/.zshrc
+```
 
 
 ##### ALTERANDO O SHELL DE BASH PARA ZSH
