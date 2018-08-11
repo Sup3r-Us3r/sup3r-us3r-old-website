@@ -3,7 +3,7 @@ layout: post
 title:  "Instalando ZSH e Oh-My-ZSH"
 date:   2018-08-10 00:40:00 +0000
 categories: Dicas
-tags: shell
+tags: instalacao
 comments: 1
 ---
 
