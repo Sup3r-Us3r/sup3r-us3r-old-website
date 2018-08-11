@@ -106,7 +106,7 @@ $ echo "polybar -r mybar &" > ~/.xinitrc
 > obs: necessita usar o i3wm para realizar esse processo.
 
 ```
-exec polybar -r mybar
+exec --no-startup-id polybar -r mybar
 ```
 
 > Iniciando a barra no aquivo **~/.config/bspwm/bspwmrc**
