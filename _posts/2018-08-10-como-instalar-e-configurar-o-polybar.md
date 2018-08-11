@@ -67,10 +67,17 @@ Ok Polybar instalado, fontes instaladas, agora precisamos configurar essa barra,
 ```
 $ mkdir -p ~/.config/polybar
 ```
-> Agora vamos baixar a configuração modificada
+> Agora vamos instalar a barra de exemplo do polybar
 ```
-$ curl https://pastebin.com/raw/43qRQQje -o config
-$ mv config ~/.config/polybar
+$ install -Dm644 /usr/share/doc/polybar/config $HOME/.config/polybar/config
+```
+> Teste essa barra de exemplo, se ela rodar aperte **Control + C** para continuarmos
+```
+$ polybar -r example
+```
+> Agora vamos alterar a configuração de exemplo para a configuração modificada que fiz, basta entrar no link abaixo, copiar todo o conteúdo e substituir pelo conteúdo original dentro de **~/.config/polybar/config**
+```
+https://pastebin.com/raw/43qRQQje
 ```
 
 <br/>
